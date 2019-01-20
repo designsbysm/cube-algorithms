@@ -51,11 +51,4 @@ const Method = ({ name, stages }) =>
         <StageList stages={stages} />
     </div>;
 
-// const MethodList = ({ methods }) =>
-//     <div className='method-list'>
-//         {methods.map(method =>
-//             <Method key={method.name} name={method.name} stages={method.stages} />
-//         )}
-//     </div>;
-
 export default Method;
