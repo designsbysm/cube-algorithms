@@ -1,0 +1,47 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    margin: 0 0 0 1em;
+    padding: 0;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    // font-family: 'Source Code Pro', monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.method {
+    h1 {
+        display: none;
+    }
+}
+
+.stage {
+    clear: both;
+
+    h2 {
+        font-size: 1em;
+    }
+}
+
+.case-list {
+    display: flex;
+    flex-flow: row wrap;
+
+    .case {
+        margin: 0 1em 1em 0;
+        text-align: center;
+        width: calc((100% / 3) - 1em);
+
+        img {
+            height: auto;
+            // width: calc(100% - 2em);
+            width: 100%;
+        }
+
+        .algorithm {
+            font-size: .875em;
+        }
+    }
+}
