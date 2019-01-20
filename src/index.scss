@@ -11,11 +11,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.method {
-    h1 {
-        display: none;
-    }
-}
+// .method {
+//     h1 {
+//         display: none;
+//     }
+// }
 
 .stage {
     clear: both;
@@ -36,7 +36,6 @@ body {
 
         img {
             height: auto;
-            // width: calc(100% - 2em);
             width: 100%;
         }
     }
