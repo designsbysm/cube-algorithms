@@ -3,25 +3,37 @@ html {
 }
 
 body {
-    margin: 0 0 0 1em;
-    padding: 0;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    // font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-// .method {
-//     h1 {
-//         display: none;
-//     }
-// }
+.method {
+    h1 {
+        background: #ebebeb;
+        font-size: 1.5em;
+        margin-top: 2em;
+        padding: .5em;
+    }
 
-.stage {
-    clear: both;
+    &:first-of-type {
+        h1 {
+            margin-top: 0;
+        }
+    }
+}
 
-    h2 {
-        font-size: 1em;
+.stage-list {
+    margin: 0 0 0 1em;
+
+    .stage {
+        clear: both;
+
+        h2 {
+            font-size: 1.125em;
+        }
     }
 }
 
@@ -32,11 +44,18 @@ body {
     .case {
         margin: 0 1em 1em 0;
         text-align: center;
-        width: calc((100% / 3) - 1em);
 
         img {
             height: auto;
             width: 100%;
+        }
+
+        &.one {
+            width: calc((100% / 3) - 1em);
+        }
+
+        &.two {
+            width: calc(((100% / 3) * 2) - 1em);
         }
     }
 }

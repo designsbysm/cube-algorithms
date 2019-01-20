@@ -3,29 +3,103 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 
 const methods = [{
-    name: '4LLL',
+    name: 'Ortega',
     stages: [{
-        name: 'OLL Cross Cases',
+        name: 'OLL Cases',
         cases: [{
-            name: 'Bar',
-            image: '3x3x3/oll/edge-bar.jpg',
+            name: 'Sune',
+            image: '2x2x2/oll/sune.jpg',
+            algorithms: [
+                '(R U R\' U) (R U2 R\')',
+            ],
+        }, {
+            name: 'Antisune',
+            image: '2x2x2/oll/antisune.jpg',
+            algorithms: [
+                'R U2 (R\' U\' R U\') R\'',
+            ],
+        }, {
+            name: 'A',
+            image: '2x2x2/oll/a.jpg',
+            algorithms: [
+                'R2 U2 R\' U2 R2',
+            ],
+        }, {
+            name: 'B',
+            image: '2x2x2/oll/b.jpg',
+            algorithms: [
+                'F (R U R\' U\') (R U R\' U\') F\'',
+            ],
+        }, {
+            name: 'C',
+            image: '2x2x2/oll/c.jpg',
             algorithms: [
                 'F (R U R\' U\') F\'',
             ],
         }, {
-            name: 'Ell',
-            image: '3x3x3/oll/edge-ell.jpg',
+            name: 'D',
+            image: '2x2x2/oll/d.jpg',
             algorithms: [
-                'F (U R U\' R\') F\'',
+                '(R U R\' U\') (R\' F R F\')',
             ],
         }, {
-            name: 'Dot',
-            image: '3x3x3/oll/edge-dot.jpg',
+            name: 'E',
+            image: '2x2x2/oll/e.jpg',
             algorithms: [
-                'F (R U R\' U\') S (R U R\' U\') f\'',
+                'F R U\' (R\' U\' R U) R\' F\'',
             ],
         }],
     }, {
+        name: 'Basic',
+        cases: [{
+            name: 'Last',
+            image: '2x2x2/basic/last.jpg',
+            algorithms: [
+                '(R\' U R\') D2 (R U\' R\') DR R2',
+            ],
+        }],
+    }, {
+        name: 'PBL Cases',
+        cases: [{
+            name: 'A',
+            image: '2x2x2/pbl/a.jpg',
+            columns: 'two',
+            algorithms: [
+                '(R U R\' U\') R\' F R2 U\' (R\' U\' R U) R\' F\'',
+            ],
+        }, {
+            name: 'B',
+            image: '2x2x2/pbl/b.jpg',
+            columns: 'two',
+            algorithms: [
+                '(R U\' R\' U\') F2 (U\' R U R\') D R2',
+            ],
+        }, {
+            name: 'C',
+            image: '2x2x2/pbl/c.jpg',
+            columns: 'two',
+            algorithms: [
+                'R2 U\' B2 (U2 R2 U\' R2)',
+            ],
+        }, {
+            name: 'D',
+            image: '2x2x2/pbl/d.jpg',
+            columns: 'two',
+            algorithms: [
+                '(R U\' R) F2 (R\' U R\')',
+            ],
+        }, {
+            name: 'E',
+            image: '2x2x2/pbl/e.jpg',
+            columns: 'two',
+            algorithms: [
+                'R2 F2 R2',
+            ],
+        }],
+    }],
+}, {
+    name: '4LLL',
+    stages: [{
         name: 'OLL Corner Cases',
         cases: [{
             name: 'Sune',
@@ -251,15 +325,21 @@ const Algorithm = ({ algorithm }) =>
         {algorithm}
     </div>;
 
-const Case = ({ name, image, algorithms }) => {
+const Case = ({ name, image, columns, algorithms }) => {
     let img = 'https://dummyimage.com/300';
-
     if (image) {
         img = require(`./images/${image}`);
     }
 
+    let classes = 'case';
+    if (columns) {
+        classes += ' two'
+    } else {
+        classes += ' one'
+    }
+
     return (
-        <div className='case'>
+        <div className={classes}>
             <img src={img} alt={name} />
             <Algorithm algorithm={algorithms[0]} />
         </div>);
@@ -268,7 +348,7 @@ const Case = ({ name, image, algorithms }) => {
 const CaseList = ({ cases }) =>
     <div className='case-list'>
         {cases.map(_case =>
-            <Case key={_case.name} name={_case.name} image={_case.image} algorithms={_case.algorithms} />
+            <Case key={_case.name} name={_case.name} image={_case.image} columns={_case.columns} algorithms={_case.algorithms} />
         )}
     </div>;
 
