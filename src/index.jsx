@@ -660,15 +660,22 @@ const App = () => (
         <div>
             <nav>
                 <ul>
-                    <li><Link to='/'>Roux (Intermediate)</Link></li>
-                    <li><Link to='/ortega/'>Ortega</Link></li>
-                    <li><Link to='/4lll/'>4LLL</Link></li>
+                    {methods.map(method => {
+                        return <li key={method.key}><Link to={method.key}>{method.name}</Link></li>;
+                    })}
                 </ul>
             </nav>
 
-            <Route path='/' exact component={Index} />
-            <Route path='/ortega/' component={Ortega} />
-            <Route path='/4lll/' component={FourLLL} />
+            {methods.map(method => {
+                const component = () => <Method name={method.name} stages={method.stages} />;
+                let route = <Route key={method.key} path={`/${method.key}/`} component={component} />;
+
+                if (method.key === '/') {
+                    route = <Route key={method.key} path='/' exact component={component} />;
+                }
+
+                return route;
+            })}
         </div>
     </Router>
 );
