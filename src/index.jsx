@@ -56,7 +56,7 @@ const methods = [{
             name: 'J Perm',
             image: '3x3x3/pll/corner-jperm.jpg',
             algorithms: [
-                '(R U R\') F (R U R\' U\') R\' F (R2 U\' R\')',
+                '(R U R\') F\' (R U R\' U\') R\' F (R2 U\' R\')',
             ],
         }, {
             name: 'Cross',
