@@ -14,12 +14,11 @@ const config = {
 // setup server
 app.use(express.static(path.join(__dirname, 'build')));
 
-app.get('/', function (req, res) {
+app.get('*', function (req, res) {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 // launch server
-app.listen(config.port, (cfg) => {
-    console.log(cfg);
+app.listen(config.port, () => {
     log('%s server listening on %d', config.environment, config.port);
 });
