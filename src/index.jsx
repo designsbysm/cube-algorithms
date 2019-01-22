@@ -18,6 +18,30 @@ const methods = [
 ];
 
 class Header extends React.Component {
+    state = {
+        displayMenu: false,
+    };
+
+    handleMenuToggle = () => {
+        this.setState({
+            displayMenu: !this.state.displayMenu,
+        });
+    };
+
+    handleMenuHide = () => {
+        this.setState({
+            displayMenu: false,
+        });
+    };
+
+    // handleCountAction = () => {
+    //     this.setState((state) => {
+    //         return {
+    //             actionCount: state.actionCount + 1,
+    //         };
+    //     });
+    // };
+
     render() {
         const current = this.props.methods.filter(method => {
             if (this.props.match.url.endsWith(method.key)) {
@@ -34,10 +58,10 @@ class Header extends React.Component {
 
         return <header>
             <nav>
-                <h1>{name}</h1>
-                <ul>
+                <h1 onClick={this.handleMenuToggle}>{name}</h1>
+                <ul className={this.state.displayMenu ? 'show' : 'hide'}>
                     {this.props.methods.map(method => {
-                        return <li key={method.key}><Link to={method.key}>{method.name}</Link></li>;
+                        return <li key={method.key} onClick={this.handleMenuHide}><Link to={method.key}>{method.name}</Link></li>;
                     })}
                 </ul>
             </nav>
