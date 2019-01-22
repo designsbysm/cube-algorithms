@@ -14,8 +14,6 @@ const Case = ({ name, image, columns, algorithms }) => {
     let classes = 'case';
     if (columns) {
         classes += ' two'
-    } else {
-        classes += ' one'
     }
 
     return (
