@@ -1,5 +1,5 @@
 const method = {
-    key: '/',
+    key: 'rouxInt',
     name: 'Roux (Intermediate)',
     stages: [{
         name: 'OLL Corner Cases',

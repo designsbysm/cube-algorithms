@@ -43,9 +43,8 @@ const StageList = ({ stages }) =>
         )}
     </div>;
 
-const Method = ({ name, stages }) =>
+const Method = ({ stages }) =>
     <div className='method'>
-        <h1>{name}</h1>
         <StageList stages={stages} />
     </div>;
 
