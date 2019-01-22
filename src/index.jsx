@@ -2,8 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
 import Method from './Method';
+
+//assets
 import './index.scss';
 
+//method data
 import methodRouxInt from './methods/rouxInt';
 import methodOrtega from './methods/ortega';
 import methodFourLLL from './methods/fourLLL';
@@ -15,26 +18,6 @@ const methods = [
 ];
 
 class Header extends React.Component {
-    state = {
-        displayMenu: false,
-    };
-
-    handleToogleAction = () => {
-        this.setState((state) => {
-            return {
-                displayMenu: !state.displayMenu,
-            };
-        });
-    };
-
-    handleClearAction = () => {
-        this.setState((state) => {
-            return {
-                displayMenu: false,
-            };
-        });
-    };
-
     render() {
         const current = this.props.methods.filter(method => {
             if (this.props.match.url.endsWith(method.key)) {
@@ -50,11 +33,11 @@ class Header extends React.Component {
         }
 
         return <header>
-            <h1 onClick={this.handleToogleAction}>{name}</h1>
-            <nav className={this.state.displayMenu ? 'display' : ''}>
+            <nav>
+                <h1>{name}</h1>
                 <ul>
                     {this.props.methods.map(method => {
-                        return <li key={method.key}><Link to={method.key} onClick={this.handleClearAction}>{method.name}</Link></li>;
+                        return <li key={method.key}><Link to={method.key}>{method.name}</Link></li>;
                     })}
                 </ul>
             </nav>

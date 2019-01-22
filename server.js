@@ -1,5 +1,4 @@
 const express = require('express');
-const log = require('fancy-log');
 const path = require('path');
 const app = express();
 
@@ -20,5 +19,5 @@ app.get('*', function (req, res) {
 
 // launch server
 app.listen(config.port, () => {
-    log('%s server listening on %d', config.environment, config.port);
+    console.log('%s server listening on %d', config.environment, config.port);
 });
