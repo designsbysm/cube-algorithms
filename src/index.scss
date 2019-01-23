@@ -23,10 +23,11 @@ header {
     nav {
         font-size: 16px;
 
-        h1 {
+        .title {
             cursor: pointer;
             font-size: 1.5em;
-            margin-top: 0;
+            font-weight: 700;
+            margin: 0;
             padding: .5em;
         }
 
@@ -65,7 +66,7 @@ header {
 }
 
 main {
-    margin: 0 1em;
+    margin: 2em 0;
 }
 
 .stage-list {
@@ -73,10 +74,16 @@ main {
 
     .stage {
         clear: both;
+        margin-top: 3em;
 
         h2 {
             font-size: 1.25em;
             border-bottom: 1px solid #ccc;
+            margin-top: 0;
+        }
+
+        &:first-of-type {
+            margin-top: 0;
         }
     }
 }

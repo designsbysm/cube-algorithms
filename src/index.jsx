@@ -58,7 +58,7 @@ class Header extends React.Component {
 
         return <header>
             <nav>
-                <h1 onClick={this.handleMenuToggle}>{name}</h1>
+                <div className='title' onClick={this.handleMenuToggle}>{name}</div>
                 <ul className={this.state.displayMenu ? 'show' : 'hide'}>
                     {this.props.methods.map(method => {
                         return <li key={method.key} onClick={this.handleMenuHide}><Link to={method.key}>{method.name}</Link></li>;
