@@ -44,8 +44,8 @@ const StageList = ({ stages }) =>
     </div>;
 
 const Method = ({ stages }) =>
-    <div className='method'>
+    <main className='method'>
         <StageList stages={stages} />
-    </div>;
+    </main>;
 
 export default Method;
