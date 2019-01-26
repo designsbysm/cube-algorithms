@@ -10,6 +10,7 @@ import methodFourLLL from './methods/fourLLL';
 
 //assets
 import './index.scss';
+import logo from './images/logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/pro-regular-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -53,9 +54,10 @@ class Header extends React.Component {
         }
 
         return <header>
+            <img className='logo' src={logo} alt='SM Logo' />
             <nav>
                 <div className='title' onClick={this.handleMenuToggle}>{name}
-                    <FontAwesomeIcon icon={['far', 'angle-down']} pull='right' />
+                    <FontAwesomeIcon icon={['far', 'angle-down']} />
                 </div>
                 <ul className={this.state.displayMenu ? 'show' : 'hide'}>
                     {this.props.methods.map(method => {
