@@ -13,8 +13,6 @@ import './index.scss';
 import logo from './images/logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/pro-regular-svg-icons';
-import { library } from '@fortawesome/fontawesome-svg-core';
-library.add(faAngleDown);
 
 const methods = [
     methodRouxInt,
@@ -57,7 +55,7 @@ class Header extends React.Component {
             <img className='logo' src={logo} alt='SM Logo' />
             <nav>
                 <div className='title' onClick={this.handleMenuToggle}>{name}
-                    <FontAwesomeIcon icon={['far', 'angle-down']} />
+                    <FontAwesomeIcon icon={faAngleDown} />
                 </div>
                 <ul className={this.state.displayMenu ? 'show' : 'hide'}>
                     {this.props.methods.map(method => {
