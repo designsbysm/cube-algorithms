@@ -3,14 +3,17 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
 import Method from './Method';
 
-//assets
-import './index.scss';
-import downArrow from '@fortawesome/fontawesome-pro/svgs/regular/angle-down.svg';
-
 //method data
 import methodRouxInt from './methods/rouxInt';
 import methodOrtega from './methods/ortega';
 import methodFourLLL from './methods/fourLLL';
+
+//assets
+import './index.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown } from '@fortawesome/pro-regular-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
+library.add(faAngleDown);
 
 const methods = [
     methodRouxInt,
@@ -52,7 +55,7 @@ class Header extends React.Component {
         return <header>
             <nav>
                 <div className='title' onClick={this.handleMenuToggle}>{name}
-                    <img className='down-arrow' src={downArrow} height='32' />
+                    <FontAwesomeIcon icon={['far', 'angle-down']} pull='right' />
                 </div>
                 <ul className={this.state.displayMenu ? 'show' : 'hide'}>
                     {this.props.methods.map(method => {
