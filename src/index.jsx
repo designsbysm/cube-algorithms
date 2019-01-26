@@ -5,6 +5,7 @@ import Method from './Method';
 
 //assets
 import './index.scss';
+import downArrow from '@fortawesome/fontawesome-pro/svgs/regular/angle-down.svg';
 
 //method data
 import methodRouxInt from './methods/rouxInt';
@@ -34,14 +35,6 @@ class Header extends React.Component {
         });
     };
 
-    // handleCountAction = () => {
-    //     this.setState((state) => {
-    //         return {
-    //             actionCount: state.actionCount + 1,
-    //         };
-    //     });
-    // };
-
     render() {
         const current = this.props.methods.filter(method => {
             if (this.props.match.url.endsWith(method.key)) {
@@ -58,7 +51,9 @@ class Header extends React.Component {
 
         return <header>
             <nav>
-                <div className='title' onClick={this.handleMenuToggle}>{name}</div>
+                <div className='title' onClick={this.handleMenuToggle}>{name}
+                    <img className='down-arrow' src={downArrow} height='32' />
+                </div>
                 <ul className={this.state.displayMenu ? 'show' : 'hide'}>
                     {this.props.methods.map(method => {
                         return <li key={method.key} onClick={this.handleMenuHide}><Link to={method.key}>{method.name}</Link></li>;
