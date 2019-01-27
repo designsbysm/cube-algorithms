@@ -1,12 +1,12 @@
 //method data
-import rouxInt from './rouxInt';
-import fourLLL from './fourLLL';
-import twoByInt from './twoByInt';
-import ortega from './ortega';
+import rouxInt from './3x3x3rouxInt';
+import fourLLL from './3x3x3fourLLL';
+import twoByInt from './2x2int';
+import ortega from './2x2ortega';
 
 export default [
-    rouxInt,
-    fourLLL,
     ortega,
     twoByInt,
+    rouxInt,
+    fourLLL,
 ];

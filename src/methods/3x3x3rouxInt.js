@@ -1,17 +1,18 @@
-import fourlllOllCorner from './cases/fourlllOllCorner';
-import fourlllPllCorner from './cases/fourlllPllCorner';
-import rouxEO from './cases/rouxEO';
-import rouxEP from './cases/rouxEP';
+import ornerOLL from './cases/3x3x3/4lll/oll/corner';
+import cornerPLL from './cases/3x3x3/4lll/pll/corner';
+import rouxEO from './cases/3x3x3/roux/eo';
+import rouxEP from './cases/3x3x3/roux/ep';
 
 export default {
     key: 'rouxInt',
+    group: '3x3x3',
     name: 'Roux (Intermediate)',
     stages: [{
         name: 'OLL Corner Cases',
-        cases: fourlllOllCorner,
+        cases: ornerOLL,
     }, {
         name: 'PLL Corner Cases',
-        cases: fourlllPllCorner,
+        cases: cornerPLL,
     }, {
         name: 'EO Cases',
         cases: rouxEO,

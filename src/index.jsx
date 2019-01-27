@@ -28,6 +28,8 @@ class Header extends React.Component {
     };
 
     render() {
+        console.log(this.props);
+
         const current = this.props.methods.filter(method => {
             if (this.props.match.url.endsWith(method.key)) {
                 return method.name;
@@ -48,9 +50,9 @@ class Header extends React.Component {
                     <FontAwesomeIcon icon={faAngleDown} />
                 </div>
                 <ul className={this.state.displayMenu ? 'show' : 'hide'}>
-                    {this.props.methods.map(method => {
-                        return <li key={method.key} onClick={this.handleMenuHide}><Link to={method.key}>{method.name}</Link></li>;
-                    })}
+                    {this.props.methods.map(method =>
+                        <li key={method.key} onClick={this.handleMenuHide}><Link to={method.key}>{method.name}</Link></li>
+                    )}
                 </ul>
             </nav>
         </header>;
