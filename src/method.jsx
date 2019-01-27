@@ -26,7 +26,7 @@ const Case = ({ name, image, columns, algorithms }) => {
 const CaseList = ({ cases }) =>
     <div className='case-list'>
         {cases.map(_case =>
-            <Case key={_case.name} name={_case.name} image={_case.image} columns={_case.columns} algorithms={_case.algorithms} />
+            <Case key={_case.key} name={_case.name} image={`${_case.key}.jpg`} columns={_case.columns} algorithms={_case.algorithms} />
         )}
     </div>;
 

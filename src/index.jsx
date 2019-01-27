@@ -1,24 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
-import Method from './Method';
-
-//method data
-import methodRouxInt from './methods/rouxInt';
-import methodOrtega from './methods/ortega';
-import methodFourLLL from './methods/fourLLL';
+import Method from './method';
 
 //assets
 import './index.scss';
 import logo from './images/logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/pro-regular-svg-icons';
-
-const methods = [
-    methodRouxInt,
-    methodOrtega,
-    methodFourLLL,
-];
+import methods from './methods';
 
 class Header extends React.Component {
     state = {

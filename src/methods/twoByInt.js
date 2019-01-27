@@ -1,14 +1,14 @@
+import twoByTwoBasic from './cases/twoByBasic';
 import twoByTwoIntOll from './cases/twoByIntOll';
-import ortegaPBL from './cases/ortegaPBL';
 
 export default {
-    key: 'ortega',
-    name: 'Ortega',
+    key: 'twoByTwoInt',
+    name: '2x2 (Intermediate)',
     stages: [{
         name: 'OLL Cases',
         cases: twoByTwoIntOll,
     }, {
-        name: 'PBL Cases',
-        cases: ortegaPBL,
+        name: 'Basic',
+        cases: twoByTwoBasic,
     }],
 };
