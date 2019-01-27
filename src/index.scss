@@ -56,7 +56,7 @@ header {
             display: none;
             list-style: none;
             margin: 0;
-            padding: 0;
+            padding: 1em 0;
             position: absolute;
             top: 75%;
 
@@ -64,11 +64,23 @@ header {
                 a {
                     color: #000;
                     display: block;
-                    padding: .5em 1em;
+                    padding: .5em 20px;
                     text-decoration: none;
 
                     &:hover {
                         background: #f6f6f6;
+                    }
+                }
+
+                &.group {
+                    border-bottom: 1px solid #ccc;
+                    color: #bbb;
+                    font-size: .75em;
+                    font-weight: 700;
+                    margin: 2em 20px .5em;
+
+                    &:first-of-type {
+                        margin-top: 0;
                     }
                 }
             }

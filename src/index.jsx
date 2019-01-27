@@ -27,9 +27,15 @@ class Header extends React.Component {
         });
     };
 
-    render() {
-        console.log(this.props);
+    getGroupedNav = (group, methods) => {
+        return methods.filter(method =>
+            method.group === group
+        ).map(method =>
+            <li key={method.key} onClick={this.handleMenuHide}><Link to={method.key}>{method.name}</Link></li>
+        );
+    };
 
+    render() {
         const current = this.props.methods.filter(method => {
             if (this.props.match.url.endsWith(method.key)) {
                 return method.name;
@@ -50,9 +56,10 @@ class Header extends React.Component {
                     <FontAwesomeIcon icon={faAngleDown} />
                 </div>
                 <ul className={this.state.displayMenu ? 'show' : 'hide'}>
-                    {this.props.methods.map(method =>
-                        <li key={method.key} onClick={this.handleMenuHide}><Link to={method.key}>{method.name}</Link></li>
-                    )}
+                    <li className='group'>2x2</li>
+                    {this.getGroupedNav('2x2', methods)}
+                    <li className='group'>3x3x3</li>
+                    {this.getGroupedNav('3x3x3', methods)}
                 </ul>
             </nav>
         </header>;
