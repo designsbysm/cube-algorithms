@@ -1,5 +1,5 @@
-import oll from './cases/2x2/int/oll';
-import basic from './cases/2x2/basic';
+import oll from './cases/int/oll';
+import basic from './cases/basic';
 
 export default {
     key: 'twoByTwoInt',

@@ -1,7 +1,7 @@
-import edgeOLL from './cases/3x3x3/4lll/oll/edge';
-import cornerOLL from './cases/3x3x3/4lll/oll/corner';
-import cornerPLL from './cases/3x3x3/4lll/pll/corner';
-import edgePLL from './cases/3x3x3/4lll/pll/edge';
+import edgeOLL from './cases/4lll/oll/edge';
+import cornerOLL from './cases/4lll/oll/corner';
+import cornerPLL from './cases/4lll/pll/corner';
+import edgePLL from './cases/4lll/pll/edge';
 
 export default {
     key: 'fourlll',

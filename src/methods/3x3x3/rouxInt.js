@@ -1,7 +1,7 @@
-import ornerOLL from './cases/3x3x3/4lll/oll/corner';
-import cornerPLL from './cases/3x3x3/4lll/pll/corner';
-import rouxEO from './cases/3x3x3/roux/eo';
-import rouxEP from './cases/3x3x3/roux/ep';
+import ornerOLL from './cases/4lll/oll/corner';
+import cornerPLL from './cases/4lll/pll/corner';
+import rouxEO from './cases/roux/eo';
+import rouxEP from './cases/roux/ep';
 
 export default {
     key: 'rouxInt',

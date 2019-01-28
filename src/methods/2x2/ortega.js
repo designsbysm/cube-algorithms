@@ -1,5 +1,5 @@
-import oll from './cases/2x2/int/oll';
-import pbl from './cases/2x2/ortega/pbl';
+import oll from './cases/int/oll';
+import pbl from './cases/ortega/pbl';
 
 export default {
     key: 'ortega',

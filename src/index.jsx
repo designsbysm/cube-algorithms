@@ -66,9 +66,9 @@ class Header extends React.Component {
     };
 };
 
-const App = () => (
+const App = () =>
     <Router>
-        <div>
+        <>
             <Route path='*' component={(props) => <Header methods={methods} {...props} />} />
             {methods.map(method => {
                 const component = () => <Method stages={method.stages} />;
@@ -77,9 +77,8 @@ const App = () => (
                 return route;
             })}
             <Route exact path='/' render={() => <Redirect to='/rouxInt' />} />
-        </div>
-    </Router>
-);
+        </>
+    </Router>;
 
 ReactDOM.render(
     <App />,
