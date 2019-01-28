@@ -3,7 +3,7 @@ import pbl from './cases/ortega/pbl';
 
 export default {
     key: 'ortega',
-    group: '2x2',
+    group: '2x2x2',
     name: 'Ortega',
     stages: [{
         name: 'OLL Cases',
