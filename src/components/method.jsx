@@ -8,7 +8,7 @@ const Algorithm = ({ algorithm }) =>
 const Case = ({ name, image, columns, algorithms }) => {
     let img = 'https://dummyimage.com/300';
     if (image) {
-        img = require(`./images/${image}`);
+        img = require(`../images/${image}`);
     }
 
     let classes = 'case';
