@@ -17,6 +17,12 @@ class Header extends React.Component {
         });
     };
 
+    handleMenuShow = () => {
+        this.setState({
+            displayMenu: true,
+        });
+    };
+
     handleMenuHide = () => {
         this.setState({
             displayMenu: false,
@@ -47,8 +53,8 @@ class Header extends React.Component {
 
         return <header>
             <Link to='/'><img className='logo' src={logo} alt='SM Logo' /></Link>
-            <nav>
-                <div className='title' onClick={this.handleMenuToggle}>{name}
+            <nav onMouseLeave={this.handleMenuHide}>
+                <div className='title' onClick={this.handleMenuToggle} onMouseEnter={this.handleMenuShow}>{name}
                     <FontAwesomeIcon icon={faAngleDown} />
                 </div>
                 <ul className={this.state.displayMenu ? 'show' : 'hide'}>
