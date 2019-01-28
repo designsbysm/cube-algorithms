@@ -140,6 +140,17 @@ main {
             width: 70%;
         }
 
+        .name {
+            color: #999;
+            font-size: .75em;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            @media only screen and (max-width: 480px) {
+                font-size: .875em;
+            }
+        }
+
         &.two {
             grid-column: span 2;
         }
