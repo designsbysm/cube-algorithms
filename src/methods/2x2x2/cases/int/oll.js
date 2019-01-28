@@ -11,32 +11,32 @@ export default [{
         '(R U2 R\') (U\' R U\' R\')',
     ],
 }, {
-    key: '2x2x2/intermediate/oll/a',
-    name: 'A',
+    key: '2x2x2/intermediate/oll/cross',
+    name: 'Cross',
     algorithms: [
         'R2 U2 R\' U2 R2',
     ],
 }, {
-    key: '2x2x2/intermediate/oll/b',
-    name: 'B',
+    key: '2x2x2/intermediate/oll/wheel',
+    name: 'Wheel',
     algorithms: [
         'F (R U R\' U\') (R U R\' U\') F\'',
     ],
 }, {
-    key: '2x2x2/intermediate/oll/c',
-    name: 'C',
+    key: '2x2x2/intermediate/oll/headlights',
+    name: 'Headlights',
     algorithms: [
         'F (R U R\' U\') F\'',
     ],
 }, {
-    key: '2x2x2/intermediate/oll/d',
-    name: 'D',
+    key: '2x2x2/intermediate/oll/hammerhead',
+    name: 'Hammerhead',
     algorithms: [
         '(R U R\' U\') (R\' F R F\')',
     ],
 }, {
-    key: '2x2x2/intermediate/oll/e',
-    name: 'E',
+    key: '2x2x2/intermediate/oll/bowtie',
+    name: 'Bowtie',
     algorithms: [
         'F R U\' (R\' U\' R U) R\' F\'',
     ],

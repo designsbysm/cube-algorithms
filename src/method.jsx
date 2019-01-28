@@ -19,6 +19,7 @@ const Case = ({ name, image, columns, algorithms }) => {
     return (
         <div className={classes}>
             <img src={img} alt={name} />
+            <div>{name}</div>
             <Algorithm algorithm={algorithms[0]} />
         </div>);
 };

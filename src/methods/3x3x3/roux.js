@@ -4,9 +4,9 @@ import rouxEO from './cases/roux/eo';
 import rouxEP from './cases/roux/ep';
 
 export default {
-    key: 'rouxInt',
+    key: 'roux',
     group: '3x3x3',
-    name: 'Roux (Intermediate)',
+    name: 'Roux',
     stages: [{
         name: 'OLL Corner Cases',
         cases: ornerOLL,

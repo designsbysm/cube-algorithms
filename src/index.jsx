@@ -76,7 +76,7 @@ const App = () =>
 
                 return route;
             })}
-            <Route exact path='/' render={() => <Redirect to='/rouxInt' />} />
+            <Route exact path='/' render={() => <Redirect to='/roux' />} />
         </>
     </Router>;
 
