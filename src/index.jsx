@@ -10,6 +10,7 @@ import Header from './components/header';
 import './index.scss';
 import methods from './methods';
 
+const defaultRoute = '/roux';
 const App = () =>
     <Router>
         <>
@@ -20,7 +21,7 @@ const App = () =>
 
                 return route;
             })}
-            <Route exact path='/' render={() => <Redirect to='/roux' />} />
+            <Route exact path='/' render={() => <Redirect to={defaultRoute} />} />
         </>
     </Router>;
 

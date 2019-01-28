@@ -46,8 +46,7 @@ class Header extends React.Component {
         }
 
         return <header>
-            <Router />
-            <img className='logo' src={logo} alt='SM Logo' />
+            <Router /><Link to='/'><img className='logo' src={logo} alt='SM Logo' /></Link>
             <nav>
                 <div className='title' onClick={this.handleMenuToggle}>{name}
                     <FontAwesomeIcon icon={faAngleDown} />
