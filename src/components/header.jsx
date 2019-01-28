@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Link, withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 //assets
 import logo from '../images/logo.svg';
@@ -46,7 +46,7 @@ class Header extends React.Component {
         }
 
         return <header>
-            <Router /><Link to='/'><img className='logo' src={logo} alt='SM Logo' /></Link>
+            <Link to='/'><img className='logo' src={logo} alt='SM Logo' /></Link>
             <nav>
                 <div className='title' onClick={this.handleMenuToggle}>{name}
                     <FontAwesomeIcon icon={faAngleDown} />
