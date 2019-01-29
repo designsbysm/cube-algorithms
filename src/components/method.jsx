@@ -6,19 +6,12 @@ const Algorithm = ({ algorithm }) =>
     </div>;
 
 const Case = ({ name, image, columns, algorithms }) => {
-    let img = 'https://dummyimage.com/300';
-    if (image) {
-        img = require(`../images/${image}`);
-    }
-
-    let classes = 'case';
-    if (columns) {
-        classes += ' two'
-    }
+    const source = require(`../images/${image}`);
+    const classes = columns ? `case ${columns}` : "case one";
 
     return (
         <div className={classes}>
-            <img src={img} alt={name} />
+            <img src={source} alt={name} />
             <div className='name'>{name}</div>
             <Algorithm algorithm={algorithms[0]} />
         </div>);
