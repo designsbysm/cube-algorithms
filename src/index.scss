@@ -48,47 +48,49 @@ header {
             }
         }
 
-        ul {
-            background: #fff;
-            border: 1px solid #ccc;
-            border: 1px solid rgba(0, 0, 0, .15);
-            border-radius: 4px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-            display: none;
-            list-style: none;
-            margin: 0;
-            min-width: 160px;
-            padding: 1em 0;
-            position: absolute;
-            top: 75%;
+        .nav-item {
+            .dropdown {
+                background: #fff;
+                border: 1px solid #ccc;
+                border: 1px solid rgba(0, 0, 0, .15);
+                border-radius: 4px;
+                box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+                display: none;
+                list-style: none;
+                margin: 0;
+                min-width: 160px;
+                padding: 1em 0;
+                position: absolute;
+                top: 75%;
 
-            li {
-                a {
-                    color: #000;
+                .nav-subitem {
+                    a {
+                        color: #000;
+                        display: block;
+                        padding: .5em 20px;
+                        text-decoration: none;
+
+                        &:hover {
+                            background: #f6f6f6;
+                        }
+                    }
+
+                    &.group {
+                        border-bottom: 1px solid #ccc;
+                        color: #999;
+                        font-size: .75em;
+                        font-weight: 700;
+                        margin: 2em 20px .5em;
+
+                        &:first-of-type {
+                            margin-top: 0;
+                        }
+                    }
+                }
+
+                &.show {
                     display: block;
-                    padding: .5em 20px;
-                    text-decoration: none;
-
-                    &:hover {
-                        background: #f6f6f6;
-                    }
                 }
-
-                &.group {
-                    border-bottom: 1px solid #ccc;
-                    color: #999;
-                    font-size: .75em;
-                    font-weight: 700;
-                    margin: 2em 20px .5em;
-
-                    &:first-of-type {
-                        margin-top: 0;
-                    }
-                }
-            }
-
-            &.show {
-                display: block;
             }
         }
     }
