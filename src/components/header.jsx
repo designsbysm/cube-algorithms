@@ -58,7 +58,7 @@ class Header extends React.Component {
                     <FontAwesomeIcon icon={faAngleDown} />
                 </div>
                 <ul className={this.state.displayMenu ? 'show' : 'hide'}>
-                    {['2x2x2', '3x3x3'].map(group => [
+                    {['2x2x2', '3x3x3', 'Other'].map(group => [
                         <li className='group' key={group}>{group}</li>,
                         this.getGroupedNav(group, this.props.methods),
                     ])}
