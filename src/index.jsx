@@ -8,18 +8,18 @@ import Header from './components/header';
 
 //assets
 import './index.scss';
+import logo from './images/logo.svg';
 import methods from './methods';
 
 const defaultRoute = '/roux';
 const App = () =>
     <Router>
         <>
-            <Route path='*' component={() => <Header methods={methods} />} />
+            <Header logo={logo} methods={methods} />
             {methods.map(method => {
                 const component = () => <Method stages={method.stages} />;
-                let route = <Route key={method.key} path={`/${method.key}/`} component={component} />;
 
-                return route;
+                return <Route key={method.key} path={`/${method.key}/`} component={component} />;
             })}
             <Route exact path='/' render={() => <Redirect to={defaultRoute} />} />
         </>
