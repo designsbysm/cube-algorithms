@@ -14,7 +14,7 @@ export default [{
     key: '3x3x3/4lll/oll/corner/cross',
     name: 'Cross',
     algorithms: [
-        '(R U2) (R\' U\' R U) (R\' U\' R U\') R\'',
+        'R U2 (R\' U\' R U) (R\' U\' R U\') R\'',
         'F (R U R\' U\')3 F\'',
     ],
 }, {
