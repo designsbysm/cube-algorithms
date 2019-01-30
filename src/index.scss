@@ -142,6 +142,22 @@ main {
         img {
             height: auto;
             width: 70%;
+
+            @media only screen and (min-width: 375px) {
+                min-height: 117px;
+            }
+
+            @media only screen and (min-width: 480px) {
+                min-height: 137px;
+            }
+
+            @media only screen and (min-width: 1024px) {
+                min-height: 126px;
+            }
+
+            @media only screen and (min-width: 1200px) {
+                min-height: 112px;
+            }
         }
 
         .name {
