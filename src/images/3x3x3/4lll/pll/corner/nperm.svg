@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="136px" height="136px" viewBox="0 0 136 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 53 (71998) - https://sketchapp.com -->
+    <title>3x3x3/4lll/pll/corner/nperm</title>
+    <desc>Created with Sketch Beta.</desc>
+    <g id="3x3x3/4lll/pll/corner/nperm" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3x3x3-Flat">
+            <g id="3x3x3/Flat/Sides/None"></g>
+            <g id="3x3x3/Flat/Face" fill="#D8D8D8" fill-rule="evenodd" stroke="#000000" stroke-width="1">
+                <g id="Front" transform="translate(17.000000, 85.000000)">
+                    <rect id="FR" stroke-width="2" x="68" y="0" width="34" height="34"></rect>
+                    <rect id="FM" stroke-width="2" x="34" y="0" width="34" height="34"></rect>
+                    <rect id="FL" stroke-width="2" x="0" y="0" width="34" height="34"></rect>
+                </g>
+                <g id="Section" transform="translate(17.000000, 51.000000)">
+                    <rect id="SR" stroke-width="2" x="68" y="0" width="34" height="34"></rect>
+                    <rect id="SM" stroke-width="2" x="34" y="0" width="34" height="34"></rect>
+                    <rect id="SL" stroke-width="2" x="0" y="0" width="34" height="34"></rect>
+                </g>
+                <g id="Back" transform="translate(17.000000, 17.000000)">
+                    <rect id="BR" stroke-width="2" x="68" y="0" width="34" height="34"></rect>
+                    <rect id="BM" stroke-width="2" x="34" y="0" width="34" height="34"></rect>
+                    <rect id="BL" stroke-width="2" x="0" y="0" width="34" height="34"></rect>
+                </g>
+            </g>
+        </g>
+        <g id="Arrow" transform="translate(68.000000, 68.000000) rotate(45.000000) translate(-68.000000, -68.000000) translate(20.000000, 63.000000)" stroke="#4A90E2" stroke-width="4">
+            <g id="Arrowhead-/-Open" transform="translate(86.000000, 0.000000)">
+                <polyline id="Path" transform="translate(2.302500, 5.302500) rotate(-45.000000) translate(-2.302500, -5.302500) " points="-3 10.605 7.605 10.605 7.605 0"></polyline>
+            </g>
+            <path d="M-2.84217094e-14,5 L96,5" id="Line"></path>
+            <g id="Arrowhead-/-Open" transform="translate(5.000000, 5.000000) scale(-1, 1) translate(-5.000000, -5.000000) ">
+                <polyline id="Path" transform="translate(2.302500, 5.302500) rotate(-45.000000) translate(-2.302500, -5.302500) " points="-3 10.605 7.605 10.605 7.605 0"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,15 +1,15 @@
 import oll from './cases/intermediate/oll';
-import pbl from './cases/ortega/pbl';
+import basic from './cases/basic';
 
 export default {
-    key: 'ortega',
+    key: '2x2x2int',
     group: '2x2x2',
-    name: 'Ortega',
+    name: 'Intermediate',
     stages: [{
         name: 'OLL Cases',
         cases: oll,
     }, {
-        name: 'PBL Cases',
-        cases: pbl,
+        name: 'Basic',
+        cases: basic,
     }],
 };

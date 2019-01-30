@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="136px" height="136px" viewBox="0 0 136 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 53 (71998) - https://sketchapp.com -->
+    <title>3x3x3/3x3x3/4lll/oll/corner/cross</title>
+    <desc>Created with Sketch Beta.</desc>
+    <g id="3x3x3/3x3x3/4lll/oll/corner/cross" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3x3x3-Flat">
+            <g id="3x3x3/Flat/Sides/Line">
+                <g id="Front" transform="translate(21.000000, 127.000000)">
+                    <path d="M94,0.5 L70,0.5" id="FR" stroke="#4A90E2" stroke-width="4" stroke-linecap="square"></path>
+                    <path d="M59,0.5 L35,0.5" id="FM"></path>
+                    <path d="M24,0.5 L0,0.5" id="FL" stroke="#4A90E2" stroke-width="4" stroke-linecap="square"></path>
+                </g>
+                <g id="Right" transform="translate(125.500000, 20.500000)">
+                    <path d="M13,82.5 L-11,82.5" id="RF" transform="translate(1.000000, 82.500000) rotate(90.000000) translate(-1.000000, -82.500000) "></path>
+                    <path d="M13,47.5 L-11,47.5" id="RS" transform="translate(1.000000, 47.500000) rotate(90.000000) translate(-1.000000, -47.500000) "></path>
+                    <path d="M13,12.5 L-11,12.5" id="RB" transform="translate(1.000000, 12.500000) rotate(90.000000) translate(-1.000000, -12.500000) "></path>
+                </g>
+                <g id="Left" transform="translate(7.500000, 20.500000)">
+                    <path d="M13,82.5 L-11,82.5" id="LF" transform="translate(1.000000, 82.500000) rotate(90.000000) translate(-1.000000, -82.500000) "></path>
+                    <path d="M13,47.5 L-11,47.5" id="LS" transform="translate(1.000000, 47.500000) rotate(90.000000) translate(-1.000000, -47.500000) "></path>
+                    <path d="M13,12.5 L-11,12.5" id="LB" transform="translate(1.000000, 12.500000) rotate(90.000000) translate(-1.000000, -12.500000) "></path>
+                </g>
+                <g id="Back" transform="translate(21.000000, 9.000000)">
+                    <path d="M94,0.5 L70,0.5" id="BR" stroke="#4A90E2" stroke-width="4" stroke-linecap="square"></path>
+                    <path d="M59,0.5 L35,0.5" id="BM"></path>
+                    <path d="M24,0.5 L0,0.5" id="BL" stroke="#4A90E2" stroke-width="4" stroke-linecap="square"></path>
+                </g>
+            </g>
+            <g id="3x3x3/Flat/Face" stroke="#000000">
+                <g id="Front" transform="translate(17.000000, 85.000000)">
+                    <rect id="FR" stroke-width="2" fill="#D8D8D8" x="68" y="0" width="34" height="34"></rect>
+                    <rect id="FM" stroke-width="2" fill="#4A90E2" x="34" y="0" width="34" height="34"></rect>
+                    <rect id="FL" stroke-width="2" fill="#D8D8D8" x="0" y="0" width="34" height="34"></rect>
+                </g>
+                <g id="Section" transform="translate(17.000000, 51.000000)" fill="#4A90E2">
+                    <rect id="SR" stroke-width="2" x="68" y="0" width="34" height="34"></rect>
+                    <rect id="SM" stroke-width="2" x="34" y="0" width="34" height="34"></rect>
+                    <rect id="SL" stroke-width="2" x="0" y="0" width="34" height="34"></rect>
+                </g>
+                <g id="Back" transform="translate(17.000000, 17.000000)">
+                    <rect id="BR" stroke-width="2" fill="#D8D8D8" x="68" y="0" width="34" height="34"></rect>
+                    <rect id="BM" stroke-width="2" fill="#4A90E2" x="34" y="0" width="34" height="34"></rect>
+                    <rect id="BL" stroke-width="2" fill="#D8D8D8" x="0" y="0" width="34" height="34"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

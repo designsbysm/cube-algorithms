@@ -5,8 +5,8 @@ const Algorithm = ({ algorithm }) =>
         {algorithm}
     </div>;
 
-const Case = ({ name, image, columns, algorithms }) => {
-    const source = require(`../images/${image}`);
+const Case = ({ name, image, extension, columns, algorithms }) => {
+    const source = require(`../images/${image}.${extension || 'svg'}`);
     const classes = columns ? `case ${columns}` : "case one";
 
     return (
@@ -20,7 +20,7 @@ const Case = ({ name, image, columns, algorithms }) => {
 const CaseList = ({ cases }) =>
     <div className='case-list'>
         {cases.map(_case =>
-            <Case key={_case.key} name={_case.name} image={`${_case.key}.jpg`} columns={_case.columns} algorithms={_case.algorithms} />
+            <Case key={_case.key} name={_case.name} image={_case.key} extension={_case.extension} columns={_case.columns} algorithms={_case.algorithms} />
         )}
     </div>;
 

@@ -1,14 +1,14 @@
 export default [{
     key: '3x3x3/4lll/pll/edge/uperma',
-    name: 'U Perm: A',
+    name: 'U Prem: A',
     algorithms: [
-        'F2 U\' M U2 M\' U\' F2',
+        'F2 U M U2 M\' U F2',
     ],
 }, {
     key: '3x3x3/4lll/pll/edge/upermb',
-    name: 'U Prem: B',
+    name: 'U Perm: B',
     algorithms: [
-        'F2 U M U2 M\' U F2',
+        'F2 U\' M U2 M\' U\' F2',
     ],
 }, {
     key: '3x3x3/4lll/pll/edge/hperm',
