@@ -24,21 +24,25 @@ export default [{
     ],
 }, {
     key: '3x3x3/roux/lr/e',
+    name: '2T',
     algorithms: [
         'M2 U M U2 M\' U',
     ],
 }, {
     key: '3x3x3/roux/lr/f',
+    name: '2T',
     algorithms: [
         'M2 U\' M U2 M\' U\'',
     ],
 }, {
     key: '3x3x3/roux/lr/g',
+    name: '2F',
     algorithms: [
         'U2 M\' U2 M\' U M2 U\'',
     ],
 }, {
     key: '3x3x3/roux/lr/h',
+    name: '2F',
     algorithms: [
         'U2 M\' U2 M\' U\' M2 U',
     ],
