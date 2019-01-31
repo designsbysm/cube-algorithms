@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="136px" height="136px" viewBox="0 0 136 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch Beta 53 (71998) - https://sketchapp.com -->
-    <title>3x3x3/roux/ep/dots</title>
+    <title>3x3x3/roux/ep/cycle</title>
     <desc>Created with Sketch Beta.</desc>
-    <g id="3x3x3/roux/ep/dots" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="3x3x3/roux/ep/cycle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="3x3x3/3D">
             <g id="Front" transform="translate(8.000000, 25.845700)">
-                <g id="Bottom" transform="translate(0.000000, 46.693400)" fill="#F44336">
-                    <polygon id="FBR" points="59.5 24.8115 59.5 51.8115 40 42.6265 40 16.6795"></polygon>
-                    <polygon id="FBM" points="40 16.6797 40 42.6267 20 33.2067 20 8.3397"></polygon>
-                    <polygon id="FBL" points="0 -5.68434189e-14 20 8.34 20 33.207 0 23.787"></polygon>
+                <g id="Bottom" transform="translate(0.000000, 46.693400)">
+                    <polygon id="FBR" fill="#F44336" points="59.5 24.8115 59.5 51.8115 40 42.6265 40 16.6795"></polygon>
+                    <polygon id="FBM" fill="#FFFFFF" points="40 16.6797 40 42.6267 20 33.2067 20 8.3397"></polygon>
+                    <polygon id="FBL" fill="#F44336" points="0 -5.68434189e-14 20 8.34 20 33.207 0 23.787"></polygon>
                 </g>
                 <g id="Top" transform="translate(0.000000, 0.000000)">
                     <g id="Equator" transform="translate(0.000000, 23.494400)">
                         <polygon id="FER" fill="#F44336" points="59.5 21.6775 59.5 48.0105 40 39.8785 40 14.5735"></polygon>
-                        <polygon id="FEM" fill="#FF9800" points="40 14.573 40 39.879 20 31.539 20 7.286"></polygon>
+                        <polygon id="FEM" fill="#FFFFFF" points="40 14.573 40 39.879 20 31.539 20 7.286"></polygon>
                         <polygon id="FEL" fill="#F44336" points="0 23.199 0 0 20 7.286 20 31.539"></polygon>
                     </g>
                     <polygon id="FTR" fill="#F44336" points="59.5 18.5049 59.5 45.1719 40 38.0669 40 12.4409"></polygon>
-                    <polygon id="FTM" fill="#F44336" points="20 6.2207 40 12.4407 40 38.0677 20 30.7807"></polygon>
+                    <polygon id="FTM" fill="#FFEB3B" points="20 6.2207 40 12.4407 40 38.0677 20 30.7807"></polygon>
                     <polygon id="FTL" fill="#F44336" points="0 0 20 6.221 20 30.78 0 23.494"></polygon>
                 </g>
             </g>
@@ -40,20 +40,20 @@
                 </g>
             </g>
             <g id="Top" transform="translate(8.000000, 11.029300)">
-                <g id="Front" transform="translate(0.000000, 9.755400)" fill="#FFEB3B">
-                    <polygon id="TFR" points="40 17.5015 59.5 23.5655 80 17.1895 60.501 11.6045"></polygon>
-                    <polygon id="TFM" points="40 17.5015 60.501 11.6045 40 5.7935 20 11.2815"></polygon>
-                    <polygon id="TFL" points="0 5.061 20.67 -3.55271368e-14 40 5.793 20 11.282"></polygon>
+                <g id="Front" transform="translate(0.000000, 9.755400)">
+                    <polygon id="TFR" fill="#FFEB3B" points="40 17.5015 59.5 23.5655 80 17.1895 60.501 11.6045"></polygon>
+                    <polygon id="TFM" fill="#FF9800" points="40 17.5015 60.501 11.6045 40 5.7935 20 11.2815"></polygon>
+                    <polygon id="TFL" fill="#FFEB3B" points="0 5.061 20.67 -3.55271368e-14 40 5.793 20 11.282"></polygon>
                 </g>
                 <g id="Section" transform="translate(20.669900, 4.945300)">
                     <polygon id="TSR" fill="#FFEB3B" points="60.0327 10.6036 79.3297 15.7806 59.3297 21.9996 39.8317 16.4146"></polygon>
-                    <polygon id="TSM" fill="#FFFFFF" points="19.3301 10.6036 39.8311 16.4146 60.0331 10.6036 39.8311 5.3366"></polygon>
+                    <polygon id="TSM" fill="#F44336" points="19.3301 10.6036 39.8311 16.4146 60.0331 10.6036 39.8311 5.3366"></polygon>
                     <polygon id="TSL" fill="#FFEB3B" points="19.645 -3.55271368e-14 39.832 5.337 19.33 10.604 2.13162821e-14 4.811"></polygon>
                 </g>
-                <g id="Back" transform="translate(40.315000, 0.000000)" fill="#FFEB3B">
-                    <polygon id="TBR" points="59.685 9.6289 79.685 14.5059 59.685 20.7259 40.388 15.5489"></polygon>
-                    <polygon id="TBM" points="59.685 9.6289 40.388 15.5489 20.186 10.2819 39.685 4.7509"></polygon>
-                    <polygon id="TBL" points="39.685 4.751 20.186 10.282 0 4.945 20.2 -4.26325641e-14"></polygon>
+                <g id="Back" transform="translate(40.315000, 0.000000)">
+                    <polygon id="TBR" fill="#FFEB3B" points="59.685 9.6289 79.685 14.5059 59.685 20.7259 40.388 15.5489"></polygon>
+                    <polygon id="TBM" fill="#F44336" points="59.685 9.6289 40.388 15.5489 20.186 10.2819 39.685 4.7509"></polygon>
+                    <polygon id="TBL" fill="#FFEB3B" points="39.685 4.751 20.186 10.282 0 4.945 20.2 -4.26325641e-14"></polygon>
                 </g>
             </g>
             <g id="Linework" transform="translate(8.000000, 11.029200)" stroke="#231F20">

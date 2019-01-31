@@ -1,12 +1,12 @@
 export default [{
     key: '3x3x3/roux/ep/bars',
-    name: 'Bars [Front]',
+    name: 'Bars',
     algorithms: [
         'M2 U2 M2 U2',
     ],
 }, {
     key: '3x3x3/roux/ep/columns',
-    name: 'Columns [Top]',
+    name: 'Columns',
     algorithms: [
         'M\' U2 M2 U2 M\'',
     ],
@@ -15,5 +15,11 @@ export default [{
     name: 'Dots',
     algorithms: [
         'E2 M E2 M\'',
+    ],
+}, {
+    key: '3x3x3/roux/ep/cycle',
+    name: 'Cycle',
+    algorithms: [
+        'U2 M U2',
     ],
 }];
