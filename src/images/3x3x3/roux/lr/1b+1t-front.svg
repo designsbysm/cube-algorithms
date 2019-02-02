@@ -45,7 +45,7 @@
                     <polygon id="TFM" fill="#D8D8D8" points="38.5241 17.2722 57.6155 11.7707 38.355 6.1899 19.2645 11.3537"></polygon>
                     <polygon id="TFL" fill="#FFEB3B" points="0.3398 5.3957 19.4318 0.7446 38.355 6.2697 19.2645 11.3537"></polygon>
                 </g>
-                <g id="Section" transform="translate(18.669900, 4.945300)">
+                <g id="Standing" transform="translate(18.669900, 4.945300)">
                     <polygon id="TSR" fill="#D8D8D8" points="58.0374 11.0802 77 16.164 58.0374 22.0823 38.9458 16.58125"></polygon>
                     <polygon id="TSM" fill="#FFEB3B" points="19.6851 11 38.8994 16.58125 58.0378 11.0802 38.86145 5.9472"></polygon>
                     <polygon id="TSL" fill="#D8D8D8" points="19.6851 0.814 38.8994 5.9472 19.6851 11.0802 0.7622 5.5547"></polygon>
