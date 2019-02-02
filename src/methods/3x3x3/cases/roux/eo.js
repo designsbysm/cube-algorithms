@@ -1,4 +1,10 @@
 export default [{
+    key: '3x3x3/roux/eo/arrow',
+    name: 'Arrow',
+    algorithms: [
+        'M* U\' M\'',
+    ],
+}, {
     key: '3x3x3/roux/eo/2t-a',
     name: '2T',
     algorithms: [
@@ -17,22 +23,16 @@ export default [{
         'M\' U M\' U\' (M U\' M\')',
     ],
 }, {
+    key: '3x3x3/roux/eo/1b1t',
+    name: '1B & 1T',
+    algorithms: [
+        'M U M U (M\' U\' M\')',
+    ],
+}, {
     key: '3x3x3/roux/eo/1t1b',
     name: '1T & 1B',
     algorithms: [
         'M\' U\' M\' U\' (M U\' M\')',
-    ],
-}, {
-    key: '3x3x3/roux/eo/3t1b-a',
-    name: '3T & 1B',
-    algorithms: [
-        'M\' U\' M\'',
-    ],
-}, {
-    key: '3x3x3/roux/eo/3t1b-b',
-    name: '3T & 1B',
-    algorithms: [
-        'M U M',
     ],
 }, {
     key: '3x3x3/roux/eo/2t2b-a',

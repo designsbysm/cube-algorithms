@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="136px" height="136px" viewBox="0 0 136 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch Beta 53 (71998) - https://sketchapp.com -->
-    <title>3x3x3/roux/eo/3t1b-b</title>
+    <title>3x3x3/roux/eo/1b1t</title>
     <desc>Created with Sketch Beta.</desc>
-    <g id="3x3x3/roux/eo/3t1b-b" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="3x3x3/3D">
-            <g id="Right" transform="translate(68.500000, 25.535200)">
-                <g id="Bottom" transform="translate(0.000000, 46.586900)" fill="#D8D8D8">
+    <g id="3x3x3/roux/eo/1b1t" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3x3x3/3D" transform="translate(1.000000, 0.000000)">
+            <g id="Right" transform="translate(68.500000, 25.535200)" fill="#D8D8D8">
+                <g id="Bottom" transform="translate(0.000000, 46.586900)">
                     <polygon id="RBB" points="57.3916 0.9131 57.3916 24.894 38.2993 33.887 38.2996 8.949"></polygon>
                     <polygon id="RBM" points="38.2993 8.949 38.2993 33.887 19.2077 42.8798 19.2073 16.9097"></polygon>
                     <polygon id="RBF" points="0.1157 24.8535 19.2073 16.9097 19.2073 42.8798 0.1157 51.8718"></polygon>
                 </g>
-                <g id="Equator" transform="translate(0.000000, 23.440400)" fill="#D8D8D8">
+                <g id="Equator" transform="translate(0.000000, 23.440400)">
                     <polygon id="REB" points="57.3916 0.8168 57.3916 24.1345 38.2996 32.0955 38.2996 7.7732"></polygon>
                     <polygon id="REM" points="38.2993 7.7728 38.2993 32.0952 19.2077 40.0562 19.2077 14.7292"></polygon>
                     <polygon id="REF" points="0 21.6843 19.2073 14.7292 19.2073 40.0562 0.1157 48"></polygon>
                 </g>
                 <g id="Top">
-                    <polygon id="RTB" fill="#D8D8D8" points="57.3916 0.6452 57.3916 24.2572 38.2993 31.2136 38.2993 6.6032"></polygon>
-                    <polygon id="RTM" fill="#2196F3" points="38.2996 31.2136 19.2077 38.1696 19.2077 12.5217 38.2993 6.6032"></polygon>
-                    <polygon id="RTF" fill="#D8D8D8" points="0.1157 18.4587 19.2077 12.5217 19.2073 38.1696 2.27920793e-14 45.1247"></polygon>
+                    <polygon id="RTB" points="57.3916 0.6452 57.3916 24.2572 38.2993 31.2136 38.2993 6.6032"></polygon>
+                    <polygon id="RTM" points="38.2996 31.2136 19.2077 38.1696 19.2077 12.5217 38.2993 6.6032"></polygon>
+                    <polygon id="RTF" points="0.1157 18.4587 19.2077 12.5217 19.2073 38.1696 2.27920793e-14 45.1247"></polygon>
                 </g>
             </g>
-            <g id="Front" transform="translate(11.000000, 25.845700)" fill="#D8D8D8">
+            <g id="Front" transform="translate(11.000000, 25.845700)">
                 <g id="Bottom" transform="translate(0.000000, 46.693400)">
-                    <polygon id="FBR" points="57.6157 24.455 57.6157 51.4807 38.5237 42.4629 38.5239 16.4927"></polygon>
-                    <polygon id="FBM" points="38.5237 16.4927 38.5237 42.4629 19.4319 33.47 19.4318 8.532"></polygon>
-                    <polygon id="FBL" points="0.3398 0.571 19.4319 8.5317 19.4318 33.47 0.2908 24.455"></polygon>
+                    <polygon id="FBR" fill="#D8D8D8" points="57.6157 24.455 57.6157 51.4807 38.5237 42.4629 38.5239 16.4927"></polygon>
+                    <polygon id="FBM" fill="#2196F3" points="38.5237 16.4927 38.5237 42.4629 19.4319 33.47 19.4318 8.532"></polygon>
+                    <polygon id="FBL" fill="#D8D8D8" points="0.3398 0.571 19.4319 8.5317 19.4318 33.47 0.2908 24.455"></polygon>
                 </g>
-                <g id="Top" transform="translate(0.000000, 0.000000)">
+                <g id="Top" transform="translate(0.000000, 0.000000)" fill="#D8D8D8">
                     <g id="Equator" transform="translate(0.000000, 23.494400)">
                         <polygon id="FER" points="57.6157 21.3198 57.6157 47.654 38.5239 39.6918 38.5237 14.3648"></polygon>
                         <polygon id="FEM" points="38.5239 14.3648 38.5237 39.6918 19.4318 31.731 19.4318 7.4087"></polygon>
@@ -45,10 +45,10 @@
                     <polygon id="TFM" points="38.5241 17.2722 57.6155 11.7707 38.355 6.1899 19.2645 11.3537"></polygon>
                     <polygon id="TFL" points="0.3398 5.3957 19.4318 0.7446 38.355 6.2697 19.2645 11.3537"></polygon>
                 </g>
-                <g id="Standing" transform="translate(18.669900, 4.945300)">
-                    <polygon id="TSR" fill="#2196F3" points="58.0374 11.0802 77 16.164 58.0374 22.0823 38.9458 16.58125"></polygon>
-                    <polygon id="TSM" fill="#D8D8D8" points="19.6851 11 38.8994 16.58125 58.0378 11.0802 38.86145 5.9472"></polygon>
-                    <polygon id="TSL" fill="#2196F3" points="19.6851 0.814 38.8994 5.9472 19.6851 11.0802 0.7622 5.5547"></polygon>
+                <g id="Standing" transform="translate(18.669900, 4.945300)" fill="#D8D8D8">
+                    <polygon id="TSR" points="58.0374 11.0802 77 16.164 58.0374 22.0823 38.9458 16.58125"></polygon>
+                    <polygon id="TSM" points="19.6851 11 38.8994 16.58125 58.0378 11.0802 38.86145 5.9472"></polygon>
+                    <polygon id="TSL" points="19.6851 0.814 38.8994 5.9472 19.6851 11.0802 0.7622 5.5547"></polygon>
                 </g>
                 <g id="Back" transform="translate(38.315000, 0.000000)">
                     <polygon id="TBR" fill="#D8D8D8" points="57.6523 10.4763 76.5766 15.1511 57.3549 21.1095 38.3278 16.0255"></polygon>
