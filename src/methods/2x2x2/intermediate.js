@@ -5,11 +5,8 @@ export default {
     key: '2x2x2int',
     group: '2x2x2',
     name: 'Intermediate',
-    stages: [{
-        name: 'OLL Cases',
-        cases: oll,
-    }, {
-        name: 'Basic',
-        cases: basic,
-    }],
+    stages: [
+        oll,
+        basic,
+    ],
 };

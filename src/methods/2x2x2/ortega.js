@@ -5,11 +5,8 @@ export default {
     key: 'ortega',
     group: '2x2x2',
     name: 'Ortega',
-    stages: [{
-        name: 'OLL Cases',
-        cases: oll,
-    }, {
-        name: 'PBL Cases',
-        cases: pbl,
-    }],
+    stages: [
+        oll,
+        pbl,
+    ],
 };

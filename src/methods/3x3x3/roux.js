@@ -8,20 +8,11 @@ export default {
     key: 'roux',
     group: '3x3x3',
     name: 'Roux',
-    stages: [{
-        name: 'OLL Corner Cases',
-        cases: ornerOLL,
-    }, {
-        name: 'PLL Corner Cases',
-        cases: cornerPLL,
-    }, {
-        name: 'EO Cases',
-        cases: rouxEO,
-    }, {
-        name: 'LR Cases',
-        cases: rouxLR,
-    }, {
-        name: 'EP Cases',
-        cases: rouxEP,
-    }],
+    stages: [
+        ornerOLL,
+        cornerPLL,
+        rouxEO,
+        rouxLR,
+        rouxEP,
+    ],
 };
