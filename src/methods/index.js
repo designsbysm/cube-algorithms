@@ -10,5 +10,5 @@ export default [
   twoByInt,
   rouxInt,
   fourLLL,
-  kilominx,
+  kilominx, 
 ];

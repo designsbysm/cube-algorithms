@@ -4,7 +4,5 @@ export default {
   key: "kilominx",
   group: "Other",
   name: "Kilominx",
-  stages: [
-    kilominx,
-  ],
+  stages: [ kilominx ],
 };

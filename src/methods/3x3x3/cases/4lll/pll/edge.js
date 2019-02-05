@@ -4,30 +4,22 @@ export default {
     {
       key: "3x3x3/4lll/pll/edge/uperma",
       name: "U Prem: A",
-      algorithms: [
-        "F2 U M U2 M' U F2",
-      ],
+      algorithms: [ "F2 U M U2 M' U F2" ],
     },
     {
       key: "3x3x3/4lll/pll/edge/upermb",
       name: "U Perm: B",
-      algorithms: [
-        "F2 U' M U2 M' U' F2",
-      ],
+      algorithms: [ "F2 U' M U2 M' U' F2" ],
     },
     {
       key: "3x3x3/4lll/pll/edge/hperm",
       name: "H Prem",
-      algorithms: [
-        "M2 U M2 U2 M2 U M2",
-      ],
+      algorithms: [ "M2 U M2 U2 M2 U M2" ],
     },
     {
       key: "3x3x3/4lll/pll/edge/zperm",
       name: "Z Perm",
-      algorithms: [
-        "M' U (M2 U)2 M' U2 M2 U'",
-      ],
+      algorithms: [ "M' U (M2 U)2 M' U2 M2 U'" ],
     },
   ],
 };
