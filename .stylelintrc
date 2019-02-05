@@ -1,0 +1,33 @@
+{
+  "extends": "stylelint-config-sass-guidelines",
+  "rules": {
+    "color-named": [
+      "never",
+      {
+        "severity": "warning"
+      }
+    ],
+    "color-no-hex": true,
+    "max-nesting-depth": [
+      3,
+      {
+        "severity": "warning"
+      }
+    ],
+    "order/order": [
+      "dollar-variables",
+      "declarations",
+      {
+        "type": "at-rule",
+        "name": "include"
+      }
+    ],
+    "string-quotes": "double",
+    "selector-no-qualifying-type": [
+      true,
+      {
+        "ignore": ["attribute", "class"]
+      }
+    ]
+  }
+}

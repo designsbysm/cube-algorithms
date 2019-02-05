@@ -1,45 +1,49 @@
-import React from 'react';
+import React from "react";
 
-const Algorithm = ({ algorithm }) =>
-    <div className='algorithm'>
-        {algorithm}
-    </div>;
+const Algorithm = ({ algorithm }) => (
+  <div className="algorithm">{algorithm}</div>
+);
 
-const Case = ({ name, image, extension, columns, algorithms }) => {
-    const source = require(`../images/${image}.${extension || 'svg'}`);
-    const classes = columns ? `case ${columns}` : "case one";
+const Case = ({ _case }) => {
+  const { key, name, extension, algorithms } = _case;
+  const source = require(`../images/${key}.${extension || "svg"}`);
 
-    return (
-        <div className={classes}>
-            <img src={source} alt={name} />
-            <div className='name'>{name}</div>
-            <Algorithm algorithm={algorithms[0]} />
-        </div>);
+  return (
+    <div className="case">
+      <img src={source} alt={name} />
+      <div className="name">{name}</div>
+      <Algorithm algorithm={algorithms[0]} />
+    </div>
+  );
 };
 
-const CaseList = ({ cases }) =>
-    <div className='case-list'>
-        {cases.map(_case =>
-            <Case key={_case.key} name={_case.name} image={_case.key} extension={_case.extension} columns={_case.columns} algorithms={_case.algorithms} />
-        )}
-    </div>;
+const CaseList = ({ cases }) => (
+  <div className="case-list">
+    {cases.map(_case => (
+      <Case key={_case.key} _case={_case} />
+    ))}
+  </div>
+);
 
-const Stage = ({ name, cases }) =>
-    <div className='stage'>
-        <h2>{name}</h2>
-        <CaseList cases={cases} />
-    </div>;
+const Stage = ({ name, cases }) => (
+  <div className="stage">
+    <h2>{name}</h2>
+    <CaseList cases={cases} />
+  </div>
+);
 
-const StageList = ({ stages }) =>
-    <div className='stage-list'>
-        {stages.map(stage =>
-            <Stage key={stage.name} name={stage.name} cases={stage.cases} />
-        )}
-    </div>;
+const StageList = ({ stages }) => (
+  <div className="stage-list">
+    {stages.map(stage => (
+      <Stage key={stage.name} name={stage.name} cases={stage.cases} />
+    ))}
+  </div>
+);
 
-const Method = ({ stages }) =>
-    <main className='method'>
-        <StageList stages={stages} />
-    </main>;
+const Method = ({ stages }) => (
+  <main className="method">
+    <StageList stages={stages} />
+  </main>
+);
 
 export default Method;

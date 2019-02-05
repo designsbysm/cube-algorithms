@@ -1,23 +1,23 @@
-const express = require('express');
-const path = require('path');
+const express = require("express");
+const path = require("path");
 const app = express();
 
 // load .env variables
-const dotenv = require('dotenv');
+const dotenv = require("dotenv");
 dotenv.config();
 const config = {
-    environment: process.env.SERVER_ENV,
-    port: process.env.SERVER_PORT,
+  environment: process.env.SERVER_ENV,
+  port: process.env.SERVER_PORT,
 };
 
 // setup server
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, "build")));
 
-app.get('*', function (req, res) {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+app.get("*", function(req, res) {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 
 // launch server
 app.listen(config.port, () => {
-    console.log('%s server listening on %d', config.environment, config.port);
+  console.info("%s server listening on %d", config.environment, config.port);
 });
