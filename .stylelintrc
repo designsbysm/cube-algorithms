@@ -22,12 +22,12 @@
         "name": "include"
       }
     ],
-    "string-quotes": "double",
     "selector-no-qualifying-type": [
       true,
       {
         "ignore": ["attribute", "class"]
       }
-    ]
+    ],
+    "string-quotes": "double"
   }
 }
