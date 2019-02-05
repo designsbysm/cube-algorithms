@@ -56,7 +56,7 @@ class Dropdown extends React.Component {
           {[
             "2x2x2",
             "3x3x3",
-            "Other",
+            "Other", 
           ].map(group => [
             <li className="nav-subitem group" key={group}>
               {group}

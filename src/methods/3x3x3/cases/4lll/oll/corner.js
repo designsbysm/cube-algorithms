@@ -16,7 +16,7 @@ export default {
       name: "Cross",
       algorithms: [
         "R U2 (R' U' R U) (R' U' R U') R'",
-        "F (R U R' U')3 F'",
+        "F (R U R' U')3 F'", 
       ],
     },
     {

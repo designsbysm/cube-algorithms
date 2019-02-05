@@ -13,6 +13,6 @@ export default {
     cornerPLL,
     rouxEO,
     rouxLR,
-    rouxEP,
+    rouxEP, 
   ],
 };

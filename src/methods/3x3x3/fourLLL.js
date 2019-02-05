@@ -11,6 +11,6 @@ export default {
     edgeOLL,
     cornerOLL,
     cornerPLL,
-    edgePLL,
+    edgePLL, 
   ],
 };

@@ -7,6 +7,6 @@ export default {
   name: "Intermediate",
   stages: [
     oll,
-    basic,
+    basic, 
   ],
 };
