@@ -1,8 +1,6 @@
 import React from "react";
 
-const Algorithm = ({ algorithm }) => (
-  <div className="algorithm">{algorithm}</div>
-);
+const Algorithm = ({ algorithm }) => <div className="algorithm">{algorithm}</div>;
 
 const Case = ({ _case }) => {
   const { key, name, extension, algorithms } = _case;

@@ -11,7 +11,7 @@ export default {
       name: "N Perm",
       algorithms: [
         "(R' U R U') R' F' U' F (R U R') F R' F' (R U' R)",
-        "(R' U L' U2 R U' L)2 U",
+        "(R' U L' U2 R U' L)2 U", 
       ],
     },
   ],

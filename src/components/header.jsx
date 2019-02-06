@@ -50,9 +50,7 @@ class Dropdown extends React.Component {
           {this.props.title}
           <FontAwesomeIcon icon={faAngleDown} />
         </div>
-        <ul
-          className={`dropdown ${this.state.dropdownVisible ? "show" : "hide"}`}
-        >
+        <ul className={`dropdown ${this.state.dropdownVisible ? "show" : "hide"}`}>
           {[
             "2x2x2",
             "3x3x3",

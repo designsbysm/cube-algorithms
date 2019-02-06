@@ -19,13 +19,7 @@ const App = () => (
       {methods.map(method => {
         const component = () => <Method stages={method.stages} />;
 
-        return (
-          <Route
-            key={method.key}
-            path={`/${method.key}/`}
-            component={component}
-          />
-        );
+        return <Route key={method.key} path={`/${method.key}/`} component={component} />;
       })}
       <Route exact path="/" render={() => <Redirect to={defaultRoute} />} />
     </>
