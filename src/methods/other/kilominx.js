@@ -1,8 +1,8 @@
 import kilominx from "./cases/kilominx";
 
 export default {
-  key: "kilominx",
   group: "Other",
+  key: "kilominx",
   name: "Kilominx",
   stages: [ kilominx ],
 };

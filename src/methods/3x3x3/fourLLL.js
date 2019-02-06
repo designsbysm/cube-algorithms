@@ -4,8 +4,8 @@ import cornerPLL from "./cases/4lll/pll/corner";
 import edgePLL from "./cases/4lll/pll/edge";
 
 export default {
-  key: "fourlll",
   group: "3x3x3",
+  key: "fourlll",
   name: "4LLL",
   stages: [
     edgeOLL,

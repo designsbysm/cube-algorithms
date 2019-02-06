@@ -5,8 +5,8 @@ import rouxLR from "./cases/roux/lr";
 import rouxEP from "./cases/roux/ep";
 
 export default {
-  key: "roux",
   group: "3x3x3",
+  key: "roux",
   name: "Roux",
   stages: [
     cornerOLL,
