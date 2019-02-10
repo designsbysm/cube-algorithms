@@ -48,12 +48,12 @@ class Dropdown extends React.Component {
       >
         <div className="title">
           {this.props.title}
-          {/* <FontAwesomeIcon icon={faAngleDown} /> */}
+          <FontAwesomeIcon icon={faAngleDown} />
         </div>
         <ul className={`dropdown ${this.state.dropdownVisible ? "show" : "hide"}`}>
           {[
-            "2x2x2",
-            "3x3x3",
+            "2x2",
+            "3x3",
             "Other", 
           ].map(group => [
             <li className="nav-subitem group" key={group}>

@@ -1,0 +1,88 @@
+/* stylelint-disable color-no-hex */
+$color--header-background: #fff;
+$color--nav-border: #ccc;
+$color--nav-hover: #f6f6f6;
+$color--nav-text: #000;
+$color--nav-group: #999;
+/* stylelint-enable */
+
+header {
+  background: rgba($color--header-background, 0.9);
+  padding-bottom: 1em;
+  position: sticky;
+  top: 0;
+
+  .logo {
+    float: left;
+    height: 60px;
+    margin: 0 1em;
+  }
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  font-size: 16px;
+  height: 60px;
+
+  .title {
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0.5em 0;
+
+    .fa-angle-down {
+      color: $color--nav-group;
+      margin-left: 0.25em;
+      position: relative;
+      top: 3px;
+    }
+  }
+}
+
+.nav-item {
+  .dropdown {
+    background: $color--header-background;
+    border: 1px solid $color--nav-border;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    display: none;
+    list-style: none;
+    margin: 0;
+    min-width: 160px;
+    padding: 1em 0;
+    position: absolute;
+    top: 75%;
+
+    &.show {
+      display: block;
+    }
+  }
+}
+
+.nav-subitem {
+  a {
+    color: $color--nav-text;
+    display: block;
+    padding: 0.5em 20px;
+    text-decoration: none;
+
+    &:hover {
+      background: $color--nav-hover;
+    }
+  }
+
+  &.group {
+    border-bottom: 1px solid $color--nav-border;
+    color: $color--nav-group;
+    font-size: 0.75em;
+    font-weight: 700;
+    margin: 2em 20px 0.5em;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+}

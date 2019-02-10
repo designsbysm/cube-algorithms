@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="136px" height="136px" viewBox="0 0 136 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>3x3/roux/lr/1b+1t-front</title>
+    <desc>Created with Sketch.</desc>
+    <g id="3x3/roux/lr/1b+1t-front" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3x3/3D">
+            <g id="Right" transform="translate(68.500000, 25.535200)">
+                <g id="Bottom" transform="translate(0.000000, 46.586900)" fill="#4CAF50">
+                    <polygon id="RBB" points="57.3916 0.9131 57.3916 24.894 38.2993 33.887 38.2996 8.949"></polygon>
+                    <polygon id="RBM" points="38.2993 8.949 38.2993 33.887 19.2077 42.8798 19.2073 16.9097"></polygon>
+                    <polygon id="RBF" points="0.1157 24.8535 19.2073 16.9097 19.2073 42.8798 0.1157 51.8718"></polygon>
+                </g>
+                <g id="Equator" transform="translate(0.000000, 23.440400)" fill="#4CAF50">
+                    <polygon id="REB" points="57.3916 0.8168 57.3916 24.1345 38.2996 32.0955 38.2996 7.7732"></polygon>
+                    <polygon id="REM" points="38.2993 7.7728 38.2993 32.0952 19.2077 40.0562 19.2077 14.7292"></polygon>
+                    <polygon id="REF" points="0 21.6843 19.2073 14.7292 19.2073 40.0562 0.1157 48"></polygon>
+                </g>
+                <g id="Top" fill="#D8D8D8">
+                    <polygon id="RTB" points="57.3916 0.6452 57.3916 24.2572 38.2993 31.2136 38.2993 6.6032"></polygon>
+                    <polygon id="RTM" points="38.2996 31.2136 19.2077 38.1696 19.2077 12.5217 38.2993 6.6032"></polygon>
+                    <polygon id="RTF" points="0.1157 18.4587 19.2077 12.5217 19.2073 38.1696 2.27920793e-14 45.1247"></polygon>
+                </g>
+            </g>
+            <g id="Front" transform="translate(11.000000, 25.845700)">
+                <g id="Bottom" transform="translate(0.000000, 46.693400)">
+                    <polygon id="FBR" fill="#F44336" points="57.6157 24.455 57.6157 51.4807 38.5237 42.4629 38.5239 16.4927"></polygon>
+                    <polygon id="FBM" fill="#2196F3" points="38.5237 16.4927 38.5237 42.4629 19.4319 33.47 19.4318 8.532"></polygon>
+                    <polygon id="FBL" fill="#F44336" points="0.3398 0.571 19.4319 8.5317 19.4318 33.47 0.2908 24.455"></polygon>
+                </g>
+                <g id="Top" transform="translate(0.000000, 0.000000)">
+                    <g id="Equator" transform="translate(0.000000, 23.494400)">
+                        <polygon id="FER" fill="#F44336" points="57.6157 21.3198 57.6157 47.654 38.5239 39.6918 38.5237 14.3648"></polygon>
+                        <polygon id="FEM" fill="#D8D8D8" points="38.5239 14.3648 38.5237 39.6918 19.4318 31.731 19.4318 7.4087"></polygon>
+                        <polygon id="FEL" fill="#F44336" points="0.3398 23.77 0.2908 0.4523 19.4318 7.4087 19.4319 31.731"></polygon>
+                    </g>
+                    <polygon id="FTR" fill="#D8D8D8" points="57.6157 18.1482 57.6157 44.8142 38.5237 37.8591 38.5237 12.2112"></polygon>
+                    <polygon id="FTM" fill="#D8D8D8" points="19.4318 6.2927 38.5237 12.2112 38.5239 37.8591 19.4319 30.9031"></polygon>
+                    <polygon id="FTL" fill="#D8D8D8" points="0.2908 0.3347 19.4318 6.2927 19.4318 30.9031 0.3398 23.9467"></polygon>
+                </g>
+            </g>
+            <g id="Top" transform="translate(11.000000, 11.029300)">
+                <g id="Front" transform="translate(0.000000, 9.755400)">
+                    <polygon id="TFR" fill="#FFEB3B" points="38.5241 17.2717 57.6157 23.2092 76.7073 17.2717 57.6155 11.7707"></polygon>
+                    <polygon id="TFM" fill="#D8D8D8" points="38.5241 17.2722 57.6155 11.7707 38.355 6.1899 19.2645 11.3537"></polygon>
+                    <polygon id="TFL" fill="#FFEB3B" points="0.3398 5.3957 19.4318 0.7446 38.355 6.2697 19.2645 11.3537"></polygon>
+                </g>
+                <g id="Standing" transform="translate(18.669900, 4.945300)">
+                    <polygon id="TSR" fill="#D8D8D8" points="58.0374 11.0802 77 16.164 58.0374 22.0823 38.9458 16.58125"></polygon>
+                    <polygon id="TSM" fill="#FFEB3B" points="19.6851 11 38.8994 16.58125 58.0378 11.0802 38.86145 5.9472"></polygon>
+                    <polygon id="TSL" fill="#D8D8D8" points="19.6851 0.814 38.8994 5.9472 19.6851 11.0802 0.7622 5.5547"></polygon>
+                </g>
+                <g id="Back" transform="translate(38.315000, 0.000000)" fill="#FFEB3B">
+                    <polygon id="TBR" points="57.6523 10.4763 76.5766 15.1511 57.3549 21.1095 38.3278 16.0255"></polygon>
+                    <polygon id="TBM" points="57.6523 10.4763 38.3927 16.0255 19.21635 10.8924 38.685 5.7593"></polygon>
+                    <polygon id="TBL" points="38.687725 5.7593 19.21635 10.8925 3.55271368e-14 5.7593 19.338 0.9905"></polygon>
+                </g>
+            </g>
+            <g id="Linework" transform="translate(11.330700, 12.030000)" stroke="#231F20">
+                <path d="M37.8861,4.7217 L95.4691,20.0887" id="Stroke-43" stroke-width="2"></path>
+                <path d="M19.0775,9.5166 L76.3765,26.0266" id="Stroke-44" stroke-width="2"></path>
+                <path d="M76.3983,4.7979 L19.1013,20.0889" id="Stroke-45" stroke-width="2"></path>
+                <path d="M95.6366,9.4756 L38.1936,26.0266" id="Stroke-46" stroke-width="2"></path>
+                <path d="M76.3768,26.0264 L76.3768,102.9714" id="Stroke-47" stroke-width="2"></path>
+                <path d="M95.4686,20.0889 L95.4686,93.9799" id="Stroke-48" stroke-width="2"></path>
+                <path d="M38.1932,26.0264 L38.1932,102.9714" id="Stroke-49" stroke-width="2"></path>
+                <path d="M19.1014,20.0889 L19.1014,93.9799" id="Stroke-50" stroke-width="2"></path>
+                <polygon id="Stroke-51" stroke-width="2" stroke-linejoin="round" points="57.285 2.84217094e-14 114.561 14.15 114.561 84.964 114.57 84.982 57.285 111.964 -2.84217094e-14 84.982 0.009 84.964 0.009 14.15"></polygon>
+                <path d="M57.285,31.9639 L57.285,111.9639" id="Stroke-28" stroke-width="2"></path>
+                <path d="M57.285,31.9639 L114.561,14.1509" id="Stroke-30" stroke-width="2"></path>
+                <path d="M0.0091,14.1504 L57.2851,31.9634" id="Stroke-32" stroke-width="2"></path>
+                <path d="M57.285,58.6299 L114.561,37.7629" id="Stroke-34" stroke-width="2"></path>
+                <path d="M0.0091,37.7627 L57.2851,58.6297" id="Stroke-36" stroke-width="2"></path>
+                <path d="M57.285,84.9639 L114.561,61.0799" id="Stroke-38" stroke-width="2"></path>
+                <path d="M0.0091,61.0801 L57.2851,84.9641" id="Stroke-40" stroke-width="2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -7,7 +7,7 @@ import Method from "./components/method";
 import Header from "./components/header";
 
 //assets
-import "./index.scss";
+import "./styles/index.scss";
 import logo from "./images/logo.svg";
 import methods from "./methods";
 
