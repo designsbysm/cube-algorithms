@@ -21,20 +21,26 @@ class Dropdown extends React.Component {
   };
 
   handleMenuHide = () => {
-    this.setState({
-      dropdownVisible: false,
+    this.setState(() => {
+      return {
+        dropdownVisible: false,
+      };
     });
   };
 
   handleMenuShow = () => {
-    this.setState({
-      dropdownVisible: true,
+    this.setState(() => {
+      return {
+        dropdownVisible: true,
+      };
     });
   };
 
   handleMenuToggle = () => {
-    this.setState({
-      dropdownVisible: !this.state.dropdownVisible,
+    this.setState(state => {
+      return {
+        dropdownVisible: !state.dropdownVisible,
+      };
     });
   };
 
