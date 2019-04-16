@@ -20,26 +20,10 @@ class Dropdown extends React.Component {
       ));
   };
 
-  handleMenuHide = () => {
+  handleMenuVisible = value => {
     this.setState(() => {
       return {
-        dropdownVisible: false,
-      };
-    });
-  };
-
-  handleMenuShow = () => {
-    this.setState(() => {
-      return {
-        dropdownVisible: true,
-      };
-    });
-  };
-
-  handleMenuToggle = () => {
-    this.setState(state => {
-      return {
-        dropdownVisible: !state.dropdownVisible,
+        dropdownVisible: value,
       };
     });
   };
@@ -48,9 +32,15 @@ class Dropdown extends React.Component {
     return (
       <div
         className="nav-item"
-        onClick={this.handleMenuToggle}
-        onMouseEnter={this.handleMenuShow}
-        onMouseLeave={this.handleMenuHide}
+        onClick={() => {
+          this.handleMenuVisible(!this.state.dropdownVisible);
+        }}
+        onMouseEnter={() => {
+          this.handleMenuVisible(true);
+        }}
+        onMouseLeave={() => {
+          this.handleMenuVisible(false);
+        }}
       >
         <div className="title">
           {this.props.title}
