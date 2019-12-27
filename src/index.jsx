@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 
-//components
+// components
 import Method from "./components/method";
 import Header from "./components/header";
 
-//assets
+// assets
 import "./styles/index.scss";
 import logo from "./images/logo.svg";
 import methods from "./methods";
