@@ -7,7 +7,7 @@ $color--nav-group: #999;
 /* stylelint-enable */
 
 header {
-  background: rgba($color--header-background, 0.9);
+  background: $color--header-background;
   padding-bottom: 1em;
   position: sticky;
   top: 0;
