@@ -8,7 +8,7 @@ const Case = ({ _case }) => {
 
   return (
     <div className="case">
-      <img src={source} alt={name} />
+      <img src={source.default} alt={name} />
       <div className="name">{name}</div>
       <Algorithm algorithm={algorithms[0]} />
     </div>

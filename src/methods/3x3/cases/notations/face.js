@@ -1,50 +1,52 @@
-export default {
+const face = {
   cases: [
     {
-      algorithms: [ "U" ],
+      algorithms: ["U"],
       key: "3x3/notations/face/u",
       name: "Up",
     },
     {
-      algorithms: [ "D" ],
+      algorithms: ["D"],
       key: "3x3/notations/face/d",
       name: "Down",
     },
     {
-      algorithms: [ "L" ],
+      algorithms: ["L"],
       key: "3x3/notations/face/l",
       name: "Left",
     },
     {
-      algorithms: [ "R" ],
+      algorithms: ["R"],
       key: "3x3/notations/face/r",
       name: "Right",
     },
     {
-      algorithms: [ "F" ],
+      algorithms: ["F"],
       key: "3x3/notations/face/f",
       name: "Front",
     },
     {
-      algorithms: [ "B" ],
+      algorithms: ["B"],
       key: "3x3/notations/face/b",
       name: "Back",
     },
     {
-      algorithms: [ "E" ],
+      algorithms: ["E"],
       key: "3x3/notations/face/e",
       name: "Equator",
     },
     {
-      algorithms: [ "M" ],
+      algorithms: ["M"],
       key: "3x3/notations/face/m",
       name: "Middle",
     },
     {
-      algorithms: [ "S" ],
+      algorithms: ["S"],
       key: "3x3/notations/face/s",
       name: "Side",
     },
   ],
   name: "Face",
 };
+
+export default face;

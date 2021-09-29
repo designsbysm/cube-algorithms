@@ -1,8 +1,10 @@
-import kilominx from "./cases/kilominx";
+import kilominxStages from "./cases/kilominx";
 
-export default {
+const kilominx = {
   group: "Other",
   key: "kilominx",
   name: "Kilominx",
-  stages: [ kilominx ],
+  stages: [kilominxStages],
 };
+
+export default kilominx;

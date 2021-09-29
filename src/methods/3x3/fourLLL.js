@@ -3,7 +3,7 @@ import cornerOLL from "./cases/4lll/oll/corner";
 import cornerPLL from "./cases/4lll/pll/corner";
 import edgePLL from "./cases/4lll/pll/edge";
 
-export default {
+const fourLLL = {
   group: "3x3",
   key: "fourlll",
   name: "4LLL",
@@ -11,6 +11,8 @@ export default {
     edgeOLL,
     cornerOLL,
     cornerPLL,
-    edgePLL, 
+    edgePLL,
   ],
 };
+
+export default fourLLL;

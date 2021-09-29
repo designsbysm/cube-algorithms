@@ -4,7 +4,7 @@ import rouxEO from "./cases/roux/eo";
 import rouxLR from "./cases/roux/lr";
 import rouxEP from "./cases/roux/ep";
 
-export default {
+const roux = {
   group: "3x3",
   key: "roux",
   name: "Roux",
@@ -16,3 +16,5 @@ export default {
     rouxEP,
   ],
 };
+
+export default roux;

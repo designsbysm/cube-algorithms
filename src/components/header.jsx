@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 
-//assets
+// assets
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/pro-regular-svg-icons";
 
@@ -14,7 +14,7 @@ class Dropdown extends React.Component {
     return methods
       .filter(method => method.group === group)
       .map(method => (
-        <li className="nav-subitem" key={method.key} onClick={hideMenu}>
+        <li className='nav-subitem' key={method.key} onClick={hideMenu}>
           <Link to={method.key}>{method.name}</Link>
         </li>
       ));
@@ -50,7 +50,7 @@ class Dropdown extends React.Component {
           {[
             "2x2",
             "3x3",
-            "Other", 
+            "Other",
           ].map(group => [
             <li className="nav-subitem group" key={group}>
               {group}

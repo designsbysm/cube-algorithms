@@ -1,12 +1,14 @@
 import oll from "./cases/intermediate/oll";
 import pbl from "./cases/ortega/pbl";
 
-export default {
+const ortega = {
   group: "2x2",
   key: "ortega",
   name: "Ortega",
   stages: [
     oll,
-    pbl, 
+    pbl,
   ],
 };
+
+export default ortega;
