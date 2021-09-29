@@ -1,10 +1,13 @@
-FROM node:14.15.3-alpine3.12
+FROM node:14.17.6-alpine
 
 WORKDIR /app
 
-COPY . /app
+ENV PATH /app/node_modules/.bin:$PATH
 
-RUN npm install --loglevel=error
+COPY . ./
+
+RUN npm install --silent
+RUN npx browserslist@latest --update-db
 RUN npm run build
 
-CMD [ "npm", "run", "serve" ]
+CMD ["npm", "run", "serve"]
