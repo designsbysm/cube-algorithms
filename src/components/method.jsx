@@ -10,7 +10,7 @@ const Case = ({ _case }) => {
     <div className='case'>
       <img
         alt={name}
-        src={source.default}
+        src={source}
       />
       <div className='name'>{name}</div>
       <Algorithm algorithm={algorithms[0]} />
