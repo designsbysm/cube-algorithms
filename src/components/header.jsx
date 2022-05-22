@@ -1,9 +1,9 @@
-import React from "react";
-import { Link, withRouter } from "react-router-dom";
+import React from 'react';
+import { Link, withRouter } from 'react-router-dom';
 
 // assets
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/pro-regular-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown } from '@fortawesome/pro-regular-svg-icons';
 
 class Dropdown extends React.Component {
   state = {
@@ -14,7 +14,10 @@ class Dropdown extends React.Component {
     return methods
       .filter(method => method.group === group)
       .map(method => (
-        <li className='nav-subitem' key={method.key} onClick={hideMenu}>
+        <li
+          className='nav-subitem'
+          key={method.key}
+          onClick={hideMenu}>
           <Link to={method.key}>{method.name}</Link>
         </li>
       ));
@@ -31,7 +34,7 @@ class Dropdown extends React.Component {
   render() {
     return (
       <div
-        className="nav-item"
+        className='nav-item'
         onClick={() => {
           this.handleMenuVisible(!this.state.dropdownVisible);
         }}
@@ -40,19 +43,20 @@ class Dropdown extends React.Component {
         }}
         onMouseLeave={() => {
           this.handleMenuVisible(false);
-        }}
-      >
-        <div className="title">
+        }}>
+        <div className='title'>
           {this.props.title}
           <FontAwesomeIcon icon={faAngleDown} />
         </div>
-        <ul className={`dropdown ${this.state.dropdownVisible ? "show" : "hide"}`}>
+        <ul className={`dropdown ${this.state.dropdownVisible ? 'show' : 'hide'}`}>
           {[
-            "2x2",
-            "3x3",
-            "Other",
+            '2x2',
+            '3x3',
+            'Other',
           ].map(group => [
-            <li className="nav-subitem group" key={group}>
+            <li
+              className='nav-subitem group'
+              key={group}>
               {group}
             </li>,
             this.getSubItems(this.props.methods, group, this.handleMenuHide),
@@ -64,8 +68,12 @@ class Dropdown extends React.Component {
 }
 
 const Logo = ({ image }) => (
-  <Link to="/">
-    <img className="logo" src={image} alt="SM Logo" />
+  <Link to='/'>
+    <img
+      alt='SM Logo'
+      className='logo'
+      src={image}
+    />
   </Link>
 );
 
@@ -75,14 +83,17 @@ class Nav extends React.Component {
       .filter(method => url === `/${method.key}`)
       .map(method => method.name)
       .slice(0, 1)
-      .reduce((accumulator, currentValue) => currentValue, "Unknown");
+      .reduce((accumulator, currentValue) => currentValue, 'Unknown');
 
   render() {
     const title = this.title(this.props.methods, this.props.url);
 
     return (
       <nav>
-        <Dropdown title={title} methods={this.props.methods} />
+        <Dropdown
+          methods={this.props.methods}
+          title={title}
+        />
       </nav>
     );
   }
@@ -93,7 +104,10 @@ class Header extends React.Component {
     return (
       <header>
         <Logo image={this.props.logo} />
-        <Nav methods={this.props.methods} url={this.props.location.pathname} />
+        <Nav
+          methods={this.props.methods}
+          url={this.props.location.pathname}
+        />
       </header>
     );
   }

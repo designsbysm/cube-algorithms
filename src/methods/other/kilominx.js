@@ -1,9 +1,9 @@
-import kilominxStages from "./cases/kilominx";
+import kilominxStages from './cases/kilominx';
 
 const kilominx = {
-  group: "Other",
-  key: "kilominx",
-  name: "Kilominx",
+  group: 'Other',
+  key: 'kilominx',
+  name: 'Kilominx',
   stages: [kilominxStages],
 };
 

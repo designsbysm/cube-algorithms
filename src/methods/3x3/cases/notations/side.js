@@ -1,37 +1,37 @@
 const side = {
   cases: [
     {
-      algorithms: ["u"],
-      key: "3x3/notations/side/u",
-      name: "Up",
+      algorithms: ['u'],
+      key: '3x3/notations/side/u',
+      name: 'Up',
     },
     {
-      algorithms: ["d"],
-      key: "3x3/notations/side/d",
-      name: "Down",
+      algorithms: ['d'],
+      key: '3x3/notations/side/d',
+      name: 'Down',
     },
     {
-      algorithms: ["l"],
-      key: "3x3/notations/side/l",
-      name: "Left",
+      algorithms: ['l'],
+      key: '3x3/notations/side/l',
+      name: 'Left',
     },
     {
-      algorithms: ["r"],
-      key: "3x3/notations/side/r",
-      name: "Right",
+      algorithms: ['r'],
+      key: '3x3/notations/side/r',
+      name: 'Right',
     },
     {
-      algorithms: ["f"],
-      key: "3x3/notations/side/f",
-      name: "Front",
+      algorithms: ['f'],
+      key: '3x3/notations/side/f',
+      name: 'Front',
     },
     {
-      algorithms: ["b"],
-      key: "3x3/notations/side/b",
-      name: "Back",
+      algorithms: ['b'],
+      key: '3x3/notations/side/b',
+      name: 'Back',
     },
   ],
-  name: "Side",
+  name: 'Side',
 };
 
 export default side;
