@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom';
 
 // components
 import Method from './components/method';
@@ -11,30 +11,36 @@ import './styles/index.scss';
 import logo from './images/logo.svg';
 import methods from './methods';
 
-const defaultRoute = '/roux';
-const App = () => (
-  <Router>
-    <>
+const defaultRoute = 'roux';
+const defaultStages = methods.find(item => item.key === defaultRoute)?.stages;
+
+const App = () => {
+  return (
+    <Router>
       <Header
         logo={logo}
         methods={methods}
       />
-      {methods.map(method => {
-        const component = () => <Method stages={method.stages} />;
-
-        return <Route
-          component={component}
-          key={method.key}
-          path={`/${method.key}/`}
-        />;
-      })}
-      <Route
-        exact
-        path='/'
-        render={() => <Redirect to={defaultRoute} />}
-      />
-    </>
-  </Router>
-);
+      <Routes>
+        {methods.map(method => {
+          return (
+            <Route
+              element={<Method />}
+              key={method.key}
+              path={`${method.key}`}
+            />
+          );
+        })}
+        <Route
+          element={<Navigate
+            replace
+            to={'/roux'}
+          />}
+          path='*'
+        />
+      </Routes>
+    </Router>
+  );
+};
 
 ReactDOM.render(<App />, document.getElementById('root'));

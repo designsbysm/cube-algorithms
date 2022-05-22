@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // assets
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -101,16 +101,17 @@ class Nav extends React.Component {
 
 class Header extends React.Component {
   render() {
+    console.log(this.props);
     return (
       <header>
         <Logo image={this.props.logo} />
         <Nav
           methods={this.props.methods}
-          url={this.props.location.pathname}
+        // url={this.props.location.pathname}
         />
       </header>
     );
   }
 }
 
-export default withRouter(Header);
+export default Header;
