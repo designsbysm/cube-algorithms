@@ -3,7 +3,17 @@ import { useLocation } from 'react-router-dom';
 
 import Methods from '../methods';
 
-const Algorithm = ({ algorithm }) => <div className='algorithm'>{algorithm}</div>;
+const Method = ({ key }) => {
+  const location = useLocation();
+  const { pathname } = location;
+  const stages = Methods.find(item => pathname.endsWith(item.key))?.stages;
+
+  return (
+    <main className='method'>
+      <StageList stages={stages} />
+    </main>
+  );
+};
 
 const Case = ({ _case }) => {
   const { key, name, extension, algorithms } = _case;
@@ -16,50 +26,44 @@ const Case = ({ _case }) => {
         src={source}
       />
       <div className='name'>{name}</div>
-      <Algorithm algorithm={algorithms[0]} />
+      <div className='algorithm'>{algorithms[0]}</div>
     </div>
   );
 };
 
-const CaseList = ({ cases }) => (
-  <div className='case-list'>
-    {cases.map(_case => (
-      <Case
-        _case={_case}
-        key={_case.key}
-      />
-    ))}
-  </div>
-);
-
-const Stage = ({ name, cases }) => (
-  <div className='stage'>
-    <h2>{name}</h2>
-    <CaseList cases={cases} />
-  </div>
-);
-
-const StageList = ({ stages }) => (
-  <div className='stage-list'>
-    {stages.map(stage => (
-      <Stage
-        cases={stage.cases}
-        key={stage.name}
-        name={stage.name}
-      />
-    ))}
-  </div>
-);
-
-const Method = ({ key }) => {
-  const location = useLocation();
-  const { pathname } = location;
-  const stages = Methods.find(item => pathname.endsWith(item.key))?.stages;
-
+const CaseList = ({ cases }) => {
   return (
-    <main className='method'>
-      <StageList stages={stages} />
-    </main>
+    <div className='case-list'>
+      {cases.map(_case => (
+        <Case
+          _case={_case}
+          key={_case.key}
+        />
+      ))}
+    </div>
+  );
+};
+
+const Stage = ({ name, cases }) => {
+  return (
+    <div className='stage'>
+      <h2>{name}</h2>
+      <CaseList cases={cases} />
+    </div>
+  );
+};
+
+const StageList = ({ stages }) => {
+  return (
+    <div className='stage-list'>
+      {stages.map(stage => (
+        <Stage
+          cases={stage.cases}
+          key={stage.name}
+          name={stage.name}
+        />
+      ))}
+    </div>
   );
 };
 

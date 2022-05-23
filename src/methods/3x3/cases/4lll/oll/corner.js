@@ -24,14 +24,14 @@ const ollCornerCases = {
       name: 'Wheel',
     },
     {
-      algorithms: ['R2 D\' (R U2 R\') D (R U2 R)'],
-      key: '3x3/4lll/oll/corner/headlights',
-      name: 'Headlights',
-    },
-    {
       algorithms: ['(r U R\' U\') (r\' F R F\')'],
       key: '3x3/4lll/oll/corner/hammerhead',
       name: 'Hammerhead',
+    },
+    {
+      algorithms: ['R2 D\' (R U2 R\') D (R U2 R)'],
+      key: '3x3/4lll/oll/corner/headlights',
+      name: 'Headlights',
     },
     {
       algorithms: ['F\' (r U R\' U\') (r\' F R)'],

@@ -1,73 +1,61 @@
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
-
-// assets
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link, useLocation } from 'react-router-dom';
 import { faAngleDown } from '@fortawesome/pro-regular-svg-icons';
 
 import Methods from '../methods';
 
-class Dropdown extends React.Component {
-  state = {
-    dropdownVisible: false,
-  };
+const Header = ({ logo }) => {
+  return (
+    <header>
+      <Logo image={logo} />
+      <Nav />
+    </header >
+  );
+};
 
-  getSubItems = (methods, group, hideMenu) => {
-    return methods
-      .filter(method => method.group === group)
-      .map(method => (
-        <li
-          className='nav-subitem'
-          key={method.key}
-          onClick={hideMenu}>
-          <Link to={method.key}>{method.name}</Link>
-        </li>
-      ));
-  };
+const Dropdown = () => {
+  const [
+    visible,
+    setVisible,
+  ] = useState(false);
+  const location = useLocation();
+  const { pathname } = location;
+  const title = getTitle(Methods, pathname);
 
-  handleMenuVisible = value => {
-    this.setState(() => {
-      return {
-        dropdownVisible: value,
-      };
-    });
-  };
-
-  render() {
-    return (
-      <div
-        className='nav-item'
-        onClick={() => {
-          this.handleMenuVisible(!this.state.dropdownVisible);
-        }}
-        onMouseEnter={() => {
-          this.handleMenuVisible(true);
-        }}
-        onMouseLeave={() => {
-          this.handleMenuVisible(false);
-        }}>
-        <div className='title'>
-          {this.props.title}
-          <FontAwesomeIcon icon={faAngleDown} />
-        </div>
-        <ul className={`dropdown ${this.state.dropdownVisible ? 'show' : 'hide'}`}>
-          {[
-            '2x2',
-            '3x3',
-            'Other',
-          ].map(group => [
-            <li
-              className='nav-subitem group'
-              key={group}>
-              {group}
-            </li>,
-            this.getSubItems(this.props.methods, group, this.handleMenuHide),
-          ])}
-        </ul>
+  return (
+    <div
+      className='nav-item'
+      onClick={() => {
+        setVisible(current => !current);
+      }}
+      onMouseEnter={() => {
+        setVisible(true);
+      }}
+      onMouseLeave={() => {
+        setVisible(false);
+      }}>
+      <div className='title'>
+        {title}
+        <FontAwesomeIcon icon={faAngleDown} />
       </div>
-    );
-  }
-}
+      <ul className={`dropdown ${visible ? 'show' : 'hide'}`}>
+        {[
+          '2x2',
+          '3x3',
+          'Other',
+        ].map(group => [
+          <li
+            className='nav-subitem group'
+            key={group}>
+            {group}
+          </li>,
+          getSubItems(group, setVisible),
+        ])}
+      </ul>
+    </div>
+  );
+};
 
 const Logo = ({ image }) => {
   return (
@@ -81,41 +69,32 @@ const Logo = ({ image }) => {
   );
 };
 
-class Nav extends React.Component {
-  title = (methods, url) =>
-    methods
-      .filter(method => url === `/${method.key}`)
-      .map(method => method.name)
-      .slice(0, 1)
-      .reduce((accumulator, currentValue) => currentValue, 'Unknown');
-
-  render() {
-    const title = this.title(this.props.methods, this.props.url);
-
-    return (
-      <nav>
-        <Dropdown
-          methods={this.props.methods}
-          title={title}
-        />
-      </nav>
-    );
-  }
-}
-
-const Header = ({ logo }) => {
-  const location = useLocation();
-  const { pathname } = location;
-
+const Nav = () => {
   return (
-    <header>
-      <Logo image={logo} />
-      <Nav
-        methods={Methods}
-        url={pathname}
-      />
-    </header >
+    <nav>
+      <Dropdown />
+    </nav>
   );
 };
-    
+
+const getSubItems = (group, hideMenu) => {
+  return Methods
+    .filter(method => method.group === group)
+    .map(method => (
+      <li
+        className='nav-subitem'
+        key={method.key}
+        onClick={hideMenu}>
+        <Link to={method.key}>{method.name}</Link>
+      </li>
+    ));
+};
+
+const getTitle = (methods, url) =>
+  methods
+    .filter(method => url === `/${method.key}`)
+    .map(method => method.name)
+    .slice(0, 1)
+    .reduce((accumulator, currentValue) => currentValue, 'Unknown');
+
 export default Header;

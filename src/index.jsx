@@ -3,25 +3,16 @@ import ReactDOM from 'react-dom';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom';
 
-// components
+import './styles/index.scss';
 import Method from './components/Method';
 import Header from './components/Header';
-
-// assets
-import './styles/index.scss';
 import logo from './images/logo.svg';
 import methods from './methods';
-
-const defaultRoute = 'roux';
-const defaultStages = methods.find(item => item.key === defaultRoute)?.stages;
 
 const App = () => {
   return (
     <Router>
-      <Header
-        logo={logo}
-        methods={methods}
-      />
+      <Header logo={logo} />
       <Routes>
         {methods.map(method => {
           return (
