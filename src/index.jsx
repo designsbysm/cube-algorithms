@@ -6,13 +6,12 @@ import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-d
 import './styles/index.scss';
 import Method from './components/Method';
 import Header from './components/Header';
-import logo from './images/logo.svg';
 import methods from './methods';
 
 const App = () => {
   return (
     <Router>
-      <Header logo={logo} />
+      <Header />
       <Routes>
         {methods.map(method => {
           return (

@@ -3,16 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, useLocation } from 'react-router-dom';
 import { faAngleDown } from '@fortawesome/pro-regular-svg-icons';
 
-import Methods from '../methods';
-
-const Header = ({ logo }) => {
-  return (
-    <header>
-      <Logo image={logo} />
-      <Nav />
-    </header >
-  );
-};
+import Methods from '../../methods';
 
 const Dropdown = () => {
   const [
@@ -57,26 +48,6 @@ const Dropdown = () => {
   );
 };
 
-const Logo = ({ image }) => {
-  return (
-    <Link to='/'>
-      <img
-        alt='SM Logo'
-        className='logo'
-        src={image}
-      />
-    </Link>
-  );
-};
-
-const Nav = () => {
-  return (
-    <nav>
-      <Dropdown />
-    </nav>
-  );
-};
-
 const getSubItems = (group, hideMenu) => {
   return Methods
     .filter(method => method.group === group)
@@ -97,4 +68,4 @@ const getTitle = (methods, url) =>
     .slice(0, 1)
     .reduce((accumulator, currentValue) => currentValue, 'Unknown');
 
-export default Header;
+export default Dropdown;
