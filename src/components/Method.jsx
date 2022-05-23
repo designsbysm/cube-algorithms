@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 
-import methods from '../methods';
+import Methods from '../methods';
 
 const Algorithm = ({ algorithm }) => <div className='algorithm'>{algorithm}</div>;
 
@@ -54,7 +54,7 @@ const StageList = ({ stages }) => (
 const Method = ({ key }) => {
   const location = useLocation();
   const { pathname } = location;
-  const stages = methods.find(item => pathname.endsWith(item.key))?.stages;
+  const stages = Methods.find(item => pathname.endsWith(item.key))?.stages;
 
   return (
     <main className='method'>

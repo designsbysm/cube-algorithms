@@ -1,9 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 // assets
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/pro-regular-svg-icons';
+
+import Methods from '../methods';
 
 class Dropdown extends React.Component {
   state = {
@@ -67,15 +69,17 @@ class Dropdown extends React.Component {
   }
 }
 
-const Logo = ({ image }) => (
-  <Link to='/'>
-    <img
-      alt='SM Logo'
-      className='logo'
-      src={image}
-    />
-  </Link>
-);
+const Logo = ({ image }) => {
+  return (
+    <Link to='/'>
+      <img
+        alt='SM Logo'
+        className='logo'
+        src={image}
+      />
+    </Link>
+  );
+};
 
 class Nav extends React.Component {
   title = (methods, url) =>
@@ -99,19 +103,19 @@ class Nav extends React.Component {
   }
 }
 
-class Header extends React.Component {
-  render() {
-    console.log(this.props);
-    return (
-      <header>
-        <Logo image={this.props.logo} />
-        <Nav
-          methods={this.props.methods}
-        // url={this.props.location.pathname}
-        />
-      </header>
-    );
-  }
-}
+const Header = ({ logo }) => {
+  const location = useLocation();
+  const { pathname } = location;
 
+  return (
+    <header>
+      <Logo image={logo} />
+      <Nav
+        methods={Methods}
+        url={pathname}
+      />
+    </header >
+  );
+};
+    
 export default Header;
