@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom';
 
 // components
-import Method from './components/method';
-import Header from './components/header';
+import Method from './components/Method';
+import Header from './components/Header';
 
 // assets
 import './styles/index.scss';
