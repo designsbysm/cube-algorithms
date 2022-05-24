@@ -4,12 +4,12 @@ import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, StyleSheet } from 'react-native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
-import FourLLL from './src/Methods/3x3/4LLL';
-import Intermediate from './src/Methods/2x2/Intermediate';
+import FourLLL from './src/methods/3x3/4LLL';
+import Intermediate from './src/methods/2x2/Intermediate';
 import Method from './src/screens/Method';
-import Notations from './src/Methods/3x3/Notations';
-import Ortega from './src/Methods/2x2/Ortega';
-import Roux from './src/Methods/3x3/Roux';
+import Notations from './src/methods/3x3/Notations';
+import Ortega from './src/methods/2x2/Ortega';
+import Roux from './src/methods/3x3/Roux';
 
 const App = () => {
   const styles = createStyles();
