@@ -8,7 +8,7 @@ const StageComponent = ({ cases, name, notes }) => {
 
   return (
     <View style={styles.container}>
-      <Text>{name}</Text>
+      <Text style={styles.title}>{name}</Text>
       <Text>{notes}</Text>
       <Cases cases={cases} />
     </View>
@@ -18,7 +18,16 @@ const StageComponent = ({ cases, name, notes }) => {
 const createStyles = () => StyleSheet.create({
   container: {
     // flex: 1,
+    marginBottom: 45,
   },
+  title: {
+    borderBottomColor: '#ccc',
+    borderBottomWidth: 1,
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginBottom: 15,
+  },
+
 });
 
 export default StageComponent;

@@ -22,7 +22,10 @@ const CasesComponent = ({ cases }) => {
 
 const createStyles = () => StyleSheet.create({
   container: {
-    // flex: 1,
+    display: 'grid',
+    flex: 1,
+    gridGap: 30,
+    gridTemplateColumns: '1fr 1fr',
   },
 });
 

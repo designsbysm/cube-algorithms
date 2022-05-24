@@ -20,19 +20,29 @@ const CaseComponent = ({ algorithm, name, SVG }) => {
             style={styles.image}
           />}
       </View>
-      <Text>{name}</Text>
-      <Text>{algorithm.join(' ')}</Text>
+      <Text style={styles.name}>{name}</Text>
+      <Text style={styles.algorithm}>{algorithm.join(' ')}</Text>
     </View>
   );
 };
 
 const createStyles = () => StyleSheet.create({
+  algorithm: {
+    textAlign: 'center',
+  },
   container: {
-    // flex: 1,
+    alignItems: 'center',
+    flex: 1,
   },
   image: {
-    height: 100,
-    width: 100,
+    height: 150,
+    width: 150,
+  },
+  name: {
+    color: '#999',
+    fontSize: 12,
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
   },
 });
 

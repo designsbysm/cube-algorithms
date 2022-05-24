@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text } from 'react-native';
 
 import Stage from './Stage';
 
@@ -7,7 +7,7 @@ const StagesComponent = ({ method }) => {
   const styles = createStyles();
 
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       {method.map(item => {
         return (
           <Stage
@@ -16,13 +16,15 @@ const StagesComponent = ({ method }) => {
           />
         );
       })}
-    </View>
+    </ScrollView>
   );
 };
 
 const createStyles = () => StyleSheet.create({
   container: {
+    backgroundColor: '#f2f2f2',
     // flex: 1,
+    padding: 15,
   },
 });
 
