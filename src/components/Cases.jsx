@@ -24,10 +24,10 @@ const CasesComponent = ({ cases }) => {
 
   return (
     <View style={styles.container}>
-      {cases.map(item => {
+      {cases.map((item, index) => {
         return (
           <View
-            key={item.name}
+            key={`${item.name}-${index}`}
             style={styles.case}>
             <Case
               size={tile * 0.7}

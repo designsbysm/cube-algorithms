@@ -26,7 +26,6 @@ const CaseComponent = ({ algorithm, name, size, SVG }) => {
 
 const createStyles = imageWidth => StyleSheet.create({
   algorithm: {
-    marginTop: 5,
     textAlign: 'center',
   },
   container: {
@@ -35,13 +34,14 @@ const createStyles = imageWidth => StyleSheet.create({
   },
   image: {
     height: imageWidth,
+    marginBottom: 10,
     width: imageWidth,
   },
   name: {
     color: '#999',
     fontSize: 12,
     fontWeight: 'bold',
-    marginTop: 10,
+    marginBottom: 5,
     textTransform: 'uppercase',
   },
 });

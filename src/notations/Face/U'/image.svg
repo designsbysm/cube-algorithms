@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="136px" height="136px" viewBox="0 0 136 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>3x3/notations/face/u'</title>
+    <g id="3x3/notations/face/u'" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cube" transform="translate(11.290800, 12.019800)">
+            <g id="Right" transform="translate(57.209200, 14.160600)">
+                <g id="Bottom" transform="translate(0.115700, 46.854800)" fill="#505050">
+                    <polygon id="RBB" points="57.2759 0 57.2759 23.9809 38.1836 32.9739 38.1839 8.0359"></polygon>
+                    <polygon id="RBM" points="38.1836 8.0359 38.1836 32.9739 19.092 41.9667 19.0916 15.9966"></polygon>
+                    <polygon id="RBF" points="0 23.9404 19.0916 15.9966 19.0916 41.9667 0 50.9587"></polygon>
+                </g>
+                <g id="Equator" transform="translate(0.000000, 23.612000)" fill="#505050">
+                    <polygon id="REB" points="57.3916 0 57.3916 23.3177 38.2996 31.2787 38.2996 6.9564"></polygon>
+                    <polygon id="REM" points="38.2993 6.956 38.2993 31.2784 19.2077 39.2394 19.2077 13.9124"></polygon>
+                    <polygon id="REF" points="0 20.8675 19.2073 13.9124 19.2073 39.2394 0.1157 47.1832"></polygon>
+                </g>
+                <g id="Top" fill="#D8D8D8">
+                    <polygon id="RTB" points="57.3916 0 57.3916 23.612 38.2993 30.5684 38.2993 5.958"></polygon>
+                    <polygon id="RTM" points="38.2996 30.5684 19.2077 37.5244 19.2077 11.8765 38.2993 5.958"></polygon>
+                    <polygon id="RTF" points="0.1157 17.8135 19.2077 11.8765 19.2073 37.5244 1.36478917e-13 44.4795"></polygon>
+                </g>
+            </g>
+            <g id="Front" transform="translate(-0.000000, 14.160600)">
+                <g id="Bottom" transform="translate(0.000000, 46.929700)" fill="#505050">
+                    <polygon id="FBR" points="57.3249 23.884 57.3249 50.9097 38.2329 41.8919 38.2331 15.9217"></polygon>
+                    <polygon id="FBM" points="38.2329 15.9217 38.2329 41.8919 19.1411 32.899 19.141 7.961"></polygon>
+                    <polygon id="FBL" points="0.049 0 19.1411 7.9607 19.141 32.899 0 23.884"></polygon>
+                </g>
+                <g id="Top" transform="translate(0.000000, 0.000000)">
+                    <g id="Equator" transform="translate(0.000000, 23.612000)" fill="#505050">
+                        <polygon id="FER" points="57.3249 20.8675 57.3249 47.2017 38.2331 39.2395 38.2329 13.9125"></polygon>
+                        <polygon id="FEM" points="38.2331 13.9125 38.2329 39.2395 19.141 31.2787 19.141 6.9564"></polygon>
+                        <polygon id="FEL" points="0.049 23.3177 0 0 19.141 6.9564 19.1411 31.2787"></polygon>
+                    </g>
+                    <polygon id="FTR" fill="#D8D8D8" points="57.3249 17.8135 57.3249 44.4795 38.2329 37.5244 38.2329 11.8765"></polygon>
+                    <polygon id="FTM" fill="#D8D8D8" points="19.141 5.958 38.2329 11.8765 38.2331 37.5244 19.1411 30.5684"></polygon>
+                    <polygon id="FTL" fill="#D8D8D8" points="0 0 19.141 5.958 19.141 30.5684 0.049 23.612"></polygon>
+                </g>
+            </g>
+            <g id="Top" transform="translate(0.049000, 0.000000)" fill="#D8D8D8">
+                <g id="Front" transform="translate(0.000000, 9.509500)">
+                    <polygon id="TFR" points="38.1843 16.5271 57.2759 22.4646 76.3675 16.5271 57.2757 11.0261"></polygon>
+                    <polygon id="TFM" points="38.1843 16.5276 57.2757 11.0261 38.0152 5.4453 18.9247 10.6091"></polygon>
+                    <polygon id="TFL" points="0 4.6511 19.092 -3.55271368e-15 38.0152 5.5251 18.9247 10.6091"></polygon>
+                </g>
+                <g id="Standing" transform="translate(19.092300, 4.768800)">
+                    <polygon id="TSR" points="57.2752 10.2662 76.2378 15.35 57.2752 21.2683 38.1836 15.76725"></polygon>
+                    <polygon id="TSM" points="18.9229 10.186 38.1372 15.76725 57.2756 10.2662 38.09925 5.1332"></polygon>
+                    <polygon id="TSL" points="18.9229 0 38.1372 5.1332 18.9229 10.2662 0 4.7407"></polygon>
+                </g>
+                <g id="Back" transform="translate(37.975200, 0.000000)">
+                    <polygon id="TBR" points="57.6523 9.4858 76.5766 14.1606 57.3549 20.119 38.3278 15.035"></polygon>
+                    <polygon id="TBM" points="57.6523 9.4858 38.3927 15.035 19.21635 9.9019 38.685 4.7688"></polygon>
+                    <polygon id="TBL" points="38.687725 4.7688 19.21635 9.902 -7.10542736e-15 4.7688 19.338 0"></polygon>
+                </g>
+            </g>
+            <g id="Linework" transform="translate(0.039900, 0.010200)" stroke="#231F20" stroke-width="2">
+                <line x1="37.8861" y1="4.7217" x2="95.4691" y2="20.0887" id="Stroke-43"></line>
+                <line x1="19.0775" y1="9.5166" x2="76.3765" y2="26.0266" id="Stroke-44"></line>
+                <line x1="76.3983" y1="4.7979" x2="19.1013" y2="20.0889" id="Stroke-45"></line>
+                <line x1="95.6366" y1="9.4756" x2="38.1936" y2="26.0266" id="Stroke-46"></line>
+                <line x1="76.3768" y1="26.0264" x2="76.3768" y2="102.9714" id="Stroke-47"></line>
+                <line x1="95.4686" y1="20.0889" x2="95.4686" y2="93.9799" id="Stroke-48"></line>
+                <line x1="38.1932" y1="26.0264" x2="38.1932" y2="102.9714" id="Stroke-49"></line>
+                <line x1="19.1014" y1="20.0889" x2="19.1014" y2="93.9799" id="Stroke-50"></line>
+                <polygon id="Stroke-51" stroke-linejoin="round" points="57.285 0 114.561 14.15 114.561 84.964 114.57 84.982 57.285 111.964 0 84.982 0.009 84.964 0.009 14.15"></polygon>
+                <line x1="57.285" y1="31.9639" x2="57.285" y2="111.9639" id="Stroke-28"></line>
+                <line x1="57.285" y1="31.9639" x2="114.561" y2="14.1509" id="Stroke-30"></line>
+                <line x1="0.0091" y1="14.1504" x2="57.2851" y2="31.9634" id="Stroke-32"></line>
+                <line x1="57.285" y1="58.6299" x2="114.561" y2="37.7629" id="Stroke-34"></line>
+                <line x1="0.0091" y1="37.7627" x2="57.2851" y2="58.6297" id="Stroke-36"></line>
+                <line x1="57.285" y1="84.9639" x2="114.561" y2="61.0799" id="Stroke-38"></line>
+                <line x1="0.0091" y1="61.0801" x2="57.2851" y2="84.9641" id="Stroke-40"></line>
+            </g>
+        </g>
+        <g id="Direction" transform="translate(40.626360, 48.346183) rotate(18.000000) translate(-40.626360, -48.346183) translate(17.626360, 40.847316)" stroke="#2196F3" stroke-width="4">
+            <g id="Arrowhead" transform="translate(30.803633, -0.000000)">
+                <polyline id="Path" transform="translate(7.498867, 7.498867) rotate(-45.000000) translate(-7.498867, -7.498867) " points="2.19636741 12.8013674 12.8013674 12.8013674 12.8013674 2.19636741"></polyline>
+            </g>
+            <line x1="6.47324802e-15" y1="7.19636741" x2="46" y2="7.19636741" id="Line"></line>
+        </g>
+    </g>
+</svg>

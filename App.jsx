@@ -18,7 +18,7 @@ const App = () => {
     <SafeAreaView style={styles.container}>
       <StatusBar style='auto' />
       <NavigationContainer>
-        <Drawer.Navigator initialRouteName='roux'>
+        <Drawer.Navigator initialRouteName='notations'>
           <Drawer.Screen
             component={Method}
             initialParams={{ method: Intermediate }}

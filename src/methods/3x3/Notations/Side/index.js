@@ -1,18 +1,56 @@
-import B from './B';
-import D from './D';
-import F from './F';
-import L from './L';
-import R from './R';
-import U from './U';
+import {
+  SideB,
+  SideB2,
+  SideBA,
+  SideBP,
+  SideD,
+  SideD2,
+  SideDA,
+  SideDP,
+  SideF,
+  SideF2,
+  SideFA,
+  SideFP,
+  SideL,
+  SideL2,
+  SideLA,
+  SideLP,
+  SideR,
+  SideR2,
+  SideRA,
+  SideRP,
+  SideU,
+  SideU2,
+  SideUA,
+  SideUP,
+} from '../../../../notations/Side';
 
 export default {
   cases: [
-    U,
-    D,
-    L,
-    R,
-    F,
-    B,
+    SideB,
+    SideBP,
+    SideB2,
+    SideBA,
+    SideD,
+    SideDP,
+    SideD2,
+    SideDA,
+    SideF,
+    SideFP,
+    SideF2,
+    SideFA,
+    SideL,
+    SideLP,
+    SideL2,
+    SideLA,
+    SideR,
+    SideRP,
+    SideR2,
+    SideRA,
+    SideU,
+    SideUP,
+    SideU2,
+    SideUA,
   ],
   name: 'Side',
 };
