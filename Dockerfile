@@ -1,6 +1,6 @@
 FROM node:16.15.0-alpine
 
-RUN npm install -g http-server
+RUN npm install -g serve
 RUN npm install -g expo-cli
 
 ARG FONTAWESOME_NPM_TOKEN
@@ -15,4 +15,4 @@ RUN npm install --legacy-peer-deps
 COPY . .
 RUN npm run build:web
 
-CMD http-server web-build 
+CMD serve --single web-build 
