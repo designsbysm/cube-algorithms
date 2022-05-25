@@ -1,4 +1,5 @@
 import React from 'react';
+import algorithmToString from '../utils/algorithmToString';
 import { Image, Platform, StyleSheet, Text, View } from 'react-native';
 
 const CaseComponent = ({ algorithm, name, size, SVG }) => {
@@ -18,18 +19,18 @@ const CaseComponent = ({ algorithm, name, size, SVG }) => {
           style={styles.image}
         />}
       <Text style={styles.name}>{name}</Text>
-      <Text style={styles.algorithm}>{algorithm.join(' ')}</Text>
+      <Text style={styles.algorithm}>{algorithmToString(algorithm)}</Text>
     </View>
   );
 };
 
 const createStyles = imageWidth => StyleSheet.create({
   algorithm: {
+    marginTop: 5,
     textAlign: 'center',
   },
   container: {
     alignItems: 'center',
-    // backgroundColor: '#f00',
     flex: 1,
   },
   image: {
@@ -40,6 +41,7 @@ const createStyles = imageWidth => StyleSheet.create({
     color: '#999',
     fontSize: 12,
     fontWeight: 'bold',
+    marginTop: 10,
     textTransform: 'uppercase',
   },
 });
