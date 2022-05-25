@@ -1,12 +1,12 @@
-import UPermRight from './UPerm-Right';
-import UPermLeft from './UPerm-Left';
+import UPermCW from './UPerm-CW';
+import UPermCCW from './UPerm-CCW';
 import HPerm from './HPerm';
 import ZPerm from './ZPerm';
 
 export default {
   cases: [
-    UPermRight,
-    UPermLeft,
+    UPermCW,
+    UPermCCW,
     HPerm,
     ZPerm,
   ],

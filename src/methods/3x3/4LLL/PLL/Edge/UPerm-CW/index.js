@@ -4,12 +4,12 @@ export default {
   SVG,
   algorithm: [
     'F2',
-    'U\'',
+    'U',
     'M',
     'U2',
     'M\'',
-    'U\'',
+    'U',
     'F2',
   ],
-  name: 'U Perm [Left]',
+  name: 'U Prem [CW]',
 };
