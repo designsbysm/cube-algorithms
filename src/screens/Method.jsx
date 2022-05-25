@@ -5,17 +5,20 @@ import Stages from '../components/Stages';
 
 const MethodScreen = ({ route }) => {
   const styles = createStyles();
+  const { method } = route.params;
 
   return (
     <View style={styles.container}>
-      <Stages method={route.params.method} />
+      <Stages method={method} />
     </View>
   );
 };
 
 const createStyles = () => StyleSheet.create({
   container: {
-    // flex: 1,
+    backgroundColor: '#f2f2f2',
+    paddingHorizontal: 15,
+    paddingVertical: 30,
   },
 });
 

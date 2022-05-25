@@ -1,6 +1,7 @@
 {
   "name": "cube-algorithms",
   "version": "1.0.0",
+  "private": true,
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
@@ -33,6 +34,5 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.5.0",
     "react-native-svg-transformer": "^1.0.0"
-  },
-  "private": true
+  }
 }

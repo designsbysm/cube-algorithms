@@ -1,8 +1,8 @@
 import React from 'react';
 import { Image, Platform, StyleSheet, Text, View } from 'react-native';
 
-const CaseComponent = ({ algorithm, name, SVG }) => {
-  const styles = createStyles();
+const CaseComponent = ({ algorithm, name, size, SVG }) => {
+  const styles = createStyles(size);
 
   if (!SVG) {
     return null;
@@ -10,33 +10,31 @@ const CaseComponent = ({ algorithm, name, SVG }) => {
 
   return (
     <View style={styles.container}>
-      <View style={styles.image}>
-        {Platform.OS !== 'web' ? <SVG
-          height='100%'
-          width='100%'
-        />
-          : <Image
-            source={SVG}
-            style={styles.image}
-          />}
-      </View>
+      {Platform.OS !== 'web' ?
+        <SVG style={styles.image} />
+        :
+        <Image
+          source={SVG}
+          style={styles.image}
+        />}
       <Text style={styles.name}>{name}</Text>
       <Text style={styles.algorithm}>{algorithm.join(' ')}</Text>
     </View>
   );
 };
 
-const createStyles = () => StyleSheet.create({
+const createStyles = imageWidth => StyleSheet.create({
   algorithm: {
     textAlign: 'center',
   },
   container: {
     alignItems: 'center',
+    // backgroundColor: '#f00',
     flex: 1,
   },
   image: {
-    height: 150,
-    width: 150,
+    height: imageWidth,
+    width: imageWidth,
   },
   name: {
     color: '#999',
