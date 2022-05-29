@@ -1,12 +1,12 @@
-import Bar from './Bar';
-import Ell from './Ell';
-import Dot from './Dot';
+import bar from './bar';
+import ell from './ell';
+import dot from './dot';
 
 export default {
   cases: [
-    Bar,
-    Ell,
-    Dot,
+    bar,
+    ell,
+    dot,
   ],
   name: 'OLL Edge Cases',
 };
