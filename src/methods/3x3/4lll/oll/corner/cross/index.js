@@ -1,23 +1,24 @@
 import SVG from './image.svg';
+import notations from '../../../../../../notations';
 
 export default {
   SVG,
   algorithm: [
-    'R',
-    'U2',
+    notations.face.r.one,
+    notations.face.u.two,
     '(',
-    'R\'',
-    'U\'',
-    'R',
-    'U',
+    notations.face.r.pri,
+    notations.face.u.pri,
+    notations.face.r.one,
+    notations.face.u.one,
     ')',
     '(',
-    'R\'',
-    'U\'',
-    'R',
-    'U\'',
+    notations.face.r.pri,
+    notations.face.u.pri,
+    notations.face.r.one,
+    notations.face.u.pri,
     ')',
-    'R\'',
+    notations.face.r.pri,
   ],
   name: 'Cross',
 };

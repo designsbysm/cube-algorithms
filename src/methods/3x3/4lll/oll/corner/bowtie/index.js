@@ -1,18 +1,20 @@
 import SVG from './image.svg';
+import notations from '../../../../../../notations';
 
 export default {
   SVG,
   algorithm: [
-    'F\'',
+    notations.face.f.pri,
     '(',
-    'r',
-    'U',
-    'R\'',
-    'U\'',
+    notations.side.r.one,
+    notations.face.u.one,
+    notations.face.r.pri,
+    notations.face.u.pri,
     ')',
     '(',
-    'r\' F',
-    'R',
+    notations.side.r.pri,
+    notations.face.f.one,
+    notations.face.r.one,
     ')',
   ],
   name: 'Bowtie',

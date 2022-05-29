@@ -1,20 +1,21 @@
 import SVG from './image.svg';
+import notations from '../../../../../../notations';
 
 export default {
   SVG,
   algorithm: [
-    'R2',
-    'D\'',
+    notations.face.r.two,
+    notations.face.d.pri,
     '(',
-    'R',
-    'U2',
-    'R\'',
+    notations.face.r.one,
+    notations.face.u.two,
+    notations.face.r.pri,
     ')',
-    'D',
+    notations.face.d.one,
     '(',
-    'R',
-    'U2',
-    'R',
+    notations.face.r.one,
+    notations.face.u.two,
+    notations.face.r.one,
     ')',
   ],
   name: 'Headlights',

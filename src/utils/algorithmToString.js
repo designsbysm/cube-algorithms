@@ -3,7 +3,8 @@ export default algorithm => {
     return '';
   }
 
-  const result = algorithm.join(' ')
+  const result = algorithm.map(item => item.name || item)
+    .join(' ')
     .replace(/\( /g, '(')
     .replace(/ \)/g, ')');
 
