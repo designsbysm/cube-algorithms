@@ -1,9 +1,9 @@
-import Cube from './Cube';
-import Face from './Face';
-import Side from './Side';
+import cube from './cube';
+import face from './face';
+import side from './side';
 
 export default [
-  Face,
-  Side,
-  Cube,
+  face,
+  side,
+  cube,
 ];
