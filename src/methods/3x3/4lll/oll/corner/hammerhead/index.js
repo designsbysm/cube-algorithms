@@ -1,21 +1,21 @@
 import SVG from './image.svg';
-import notations from '../../../../../../notations';
+import { face, side } from '~/notations';
 
 export default {
   SVG,
   algorithm: [
-    '(',
-    notations.side.r.one,
-    notations.face.u.one,
-    notations.face.r.pri,
-    notations.face.u.pri,
-    ')',
-    '(',
-    notations.side.r.pri,
-    notations.face.f.one,
-    notations.face.r.one,
-    notations.face.f.pri,
-    ')',
+    [
+      side.r.one,
+      face.u.one,
+      face.r.pri,
+      face.u.pri,
+    ],
+    [
+      side.r.pri,
+      face.f.one,
+      face.r.one,
+      face.f.pri,
+    ],
   ],
   name: 'Hammerhead',
 };

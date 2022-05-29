@@ -1,18 +1,21 @@
 import SVG from './image.svg';
+import { face } from '~/notations';
 
 export default {
   SVG,
   algorithm: [
-    'M2',
-    'U*',
-    'M\'',
-    'U2',
-    'M',
-    '(',
-    'U*',
-    'M2',
-    'U*',
-    ')',
+    face.m.two,
+    [
+      face.u.any,
+      face.m.pri,
+      face.u.two,
+    ],
+    face.m.one,
+    [
+      face.u.any,
+      face.m.two,
+      face.u.any,
+    ],
   ],
   name: '2T',
 };

@@ -1,12 +1,15 @@
 import SVG from './image.svg';
+import { face } from '~/notations';
 
 export default {
   SVG,
   algorithm: [
-    'M2',
-    'U2',
-    'M2',
-    'U2',
+    face.m.two,
+    [
+      face.u.two,
+      face.m.two,
+      face.u.two,
+    ],
   ],
   name: 'Bars',
 };

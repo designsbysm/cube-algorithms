@@ -1,27 +1,28 @@
 import SVG from './image.svg';
+import { face } from '~/notations';
 
 export default {
   SVG,
   algorithm: [
-    '(',
-    'R',
-    'U',
-    'R\'',
-    ')',
-    'F\'',
-    '(',
-    'R',
-    'U',
-    'R\'',
-    'U\'',
-    ')',
-    'R\'',
-    'F',
-    '(',
-    'R2',
-    'U\'',
-    'R\'',
-    ')',
+    [
+      face.r.one,
+      face.u.one,
+      face.r.pri,
+    ],
+    face.f.pri,
+    [
+      face.r.one,
+      face.u.one,
+      face.r.pri,
+      face.u.pri,
+    ],
+    face.r.pri,
+    face.f.one,
+    [
+      face.r.two,
+      face.u.pri,
+      face.r.pri,
+    ],
   ],
   name: 'J Perm',
 };

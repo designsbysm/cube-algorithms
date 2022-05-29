@@ -2,13 +2,17 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
 import Stages from '../components/Stages';
+import pageStyles from '../styles/page';
 
 const MethodScreen = ({ route }) => {
   const styles = createStyles();
   const { method } = route.params;
 
   return (
-    <View style={styles.container}>
+    <View style={[
+      pageStyles.container,
+      styles.container,
+    ]}>
       <Stages method={method} />
     </View>
   );
@@ -16,8 +20,6 @@ const MethodScreen = ({ route }) => {
 
 const createStyles = () => StyleSheet.create({
   container: {
-    backgroundColor: '#f2f2f2',
-    paddingHorizontal: 15,
     paddingVertical: 30,
   },
 });

@@ -9,7 +9,7 @@
   },
   "extends": [
     "eslint:recommended",
-    "plugin:react/recommended",
+    "plugin:react/recommended"
   ],
   "plugins": [
     "react",
@@ -144,7 +144,6 @@
           "warn",
           "prefer-single"
         ],
-        "no-unused-vars": "off",
         "react/jsx-closing-bracket-location": [
           "warn",
           {

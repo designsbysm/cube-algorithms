@@ -1,15 +1,18 @@
 import SVG from './image.svg';
+import { face } from '~/notations';
 
 export default {
   SVG,
   algorithm: [
-    'M2',
-    'U',
-    'M2',
-    'U2',
-    'M2',
-    'U',
-    'M2',
+    face.m.two,
+    [
+      face.u.one,
+      face.m.two,
+      face.u.two,
+      face.m.two,
+    ],
+    face.u.one,
+    face.m.two,
   ],
   name: 'H Prem',
 };

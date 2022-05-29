@@ -1,5 +1,5 @@
-import React, { useLayoutEffect, useState } from 'react';
-import { Dimensions, ScrollView, StyleSheet } from 'react-native';
+import React from 'react';
+import { ScrollView } from 'react-native';
 
 import Stage from './Stage';
 

@@ -1,23 +1,24 @@
 import SVG from './image.svg';
+import { face } from '~/notations';
 
 export default {
   SVG,
   algorithm: [
-    '(',
-    'R',
-    'U\'',
-    'R\'',
-    'U\'',
-    ')',
-    'F2',
-    '(',
-    'U\'',
-    'R',
-    'U',
-    'R\'',
-    ')',
-    'D',
-    'R2',
+    [
+      face.r.one,
+      face.u.pri,
+      face.r.pri,
+      face.u.pri,
+    ],
+    face.f.two,
+    [
+      face.u.pri,
+      face.r.one,
+      face.u.one,
+      face.r.pri,
+    ],
+    face.d.one,
+    face.r.two,
   ],
   name: 'U Diagonal',
 };

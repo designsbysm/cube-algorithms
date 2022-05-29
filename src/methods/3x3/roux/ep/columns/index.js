@@ -1,13 +1,16 @@
 import SVG from './image.svg';
+import { face } from '~/notations';
 
 export default {
   SVG,
   algorithm: [
-    'M\'',
-    'U2',
-    'M2',
-    'U2',
-    'M\'',
+    face.m.pri,
+    [
+      face.u.two,
+      face.m.two,
+      face.u.two,
+    ],
+    face.m.pri,
   ],
   name: 'Columns',
 };

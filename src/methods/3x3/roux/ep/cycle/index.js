@@ -1,11 +1,14 @@
 import SVG from './image.svg';
+import { face } from '~/notations';
 
 export default {
   SVG,
   algorithm: [
-    'U2',
-    'M',
-    'U2',
+    [
+      face.u.two,
+      face.m.one,
+      face.u.two,
+    ],
   ],
   name: 'Cycle',
 };

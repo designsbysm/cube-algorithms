@@ -1,17 +1,18 @@
 import SVG from './image.svg';
+import { face } from '~/notations';
 
 export default {
   SVG,
   algorithm: [
-    'R2',
-    'U\'',
-    'B2',
-    '(',
-    'U2',
-    'R2',
-    'U\'',
-    'R2',
-    ')',
+    face.r.two,
+    face.u.pri,
+    face.b.two,
+    [
+      face.u.two,
+      face.r.two,
+      face.u.pri,
+      face.r.two,
+    ],
   ],
   name: 'UB & DB',
 };

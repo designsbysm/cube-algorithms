@@ -1,12 +1,13 @@
 import SVG from './image.svg';
+import { face } from '~/notations';
 
 export default {
   SVG,
   algorithm: [
-    'E2',
-    'M',
-    'E2',
-    'M\'',
+    face.e.two,
+    face.m.one,
+    face.e.two,
+    face.m.pri,
   ],
   name: 'Dots',
 };

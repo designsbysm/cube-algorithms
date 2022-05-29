@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+import Case from './Case';
 import Cases from './Cases';
 
 const StageComponent = ({ cases, isLast, name, notes }) => {
@@ -13,7 +14,10 @@ const StageComponent = ({ cases, isLast, name, notes }) => {
     ]}>
       <Text style={styles.title}>{name}</Text>
       <Text>{notes}</Text>
-      <Cases cases={cases} />
+      <Cases
+        Render={Case}
+        cases={cases}
+      />
     </View>
   );
 };

@@ -1,13 +1,14 @@
 import SVG from './image.svg';
+import { face } from '~/notations';
 
 export default {
   SVG,
   algorithm: [
-    'R2',
-    'U2',
-    'R\'',
-    'U2',
-    'R2',
+    face.r.two,
+    face.u.two,
+    face.r.pri,
+    face.u.two,
+    face.r.two,
   ],
   name: 'Cross',
 };

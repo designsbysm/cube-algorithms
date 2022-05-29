@@ -1,9 +1,7 @@
 import React from 'react';
-import { FlatList, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
+import { StyleSheet, View, useWindowDimensions } from 'react-native';
 
-import Case from './Case';
-
-const CasesComponent = ({ cases }) => {
+const CasesComponent = ({ Render, cases }) => {
   const { width } = useWindowDimensions();
 
   let columns = 2;
@@ -29,7 +27,7 @@ const CasesComponent = ({ cases }) => {
           <View
             key={`${item.name}-${index}`}
             style={styles.case}>
-            <Case
+            <Render
               size={tile * 0.7}
               {...item}
             />

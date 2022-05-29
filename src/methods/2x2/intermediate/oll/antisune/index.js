@@ -1,19 +1,20 @@
 import SVG from './image.svg';
+import { face } from '~/notations';
 
 export default {
   SVG,
   algorithm: [
-    '(',
-    'R',
-    'U2',
-    'R\'',
-    ')',
-    '(',
-    'U\'',
-    'R',
-    'U\'',
-    'R\'',
-    ')',
+    [
+      face.r.one,
+      face.u.two,
+      face.r.pri,
+    ],
+    [
+      face.u.pri,
+      face.r.one,
+      face.u.pri,
+      face.r.pri,
+    ],
   ],
   name: 'Antisune',
 };

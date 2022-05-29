@@ -1,8 +1,10 @@
 import React from 'react';
 import algorithmToString from '../utils/algorithmToString';
-import { Image, Platform, StyleSheet, Text, View } from 'react-native';
+import { Image, Platform, Pressable, StyleSheet, Text } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const CaseComponent = ({ algorithm, name, size, SVG }) => {
+  const navigation = useNavigation();
   const styles = createStyles(size);
 
   if (!SVG) {
@@ -10,7 +12,14 @@ const CaseComponent = ({ algorithm, name, size, SVG }) => {
   }
 
   return (
-    <View style={styles.container}>
+    <Pressable
+      onPress={() => {
+        navigation.navigate('algorithm', {
+          algorithm,
+          name,
+        });
+      }}
+      style={styles.container}>
       {Platform.OS !== 'web' ?
         <SVG style={styles.image} />
         :
@@ -20,7 +29,7 @@ const CaseComponent = ({ algorithm, name, size, SVG }) => {
         />}
       <Text style={styles.name}>{name}</Text>
       <Text style={styles.algorithm}>{algorithmToString(algorithm)}</Text>
-    </View>
+    </Pressable>
   );
 };
 

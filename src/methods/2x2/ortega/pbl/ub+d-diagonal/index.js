@@ -1,11 +1,12 @@
 import SVG from './image.svg';
+import { face } from '~/notations';
 
 export default {
   SVG,
   algorithm: [
-    'R2',
-    'F2',
-    'R2',
+    face.r.two,
+    face.f.two,
+    face.r.two,
   ],
   name: 'UB & D Diagonal',
 };

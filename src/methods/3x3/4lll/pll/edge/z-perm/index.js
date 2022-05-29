@@ -1,18 +1,22 @@
 import SVG from './image.svg';
+import { face } from '~/notations';
 
 export default {
   SVG,
   algorithm: [
-    'M\'',
-    'U',
-    '(',
-    'M2',
-    'U',
-    ')2',
-    'M\'',
-    'U2',
-    'M2',
-    'U\'',
+    face.m.pri,
+    [
+      face.u.one,
+      face.m.two,
+      face.u.one,
+      face.m.two,
+    ],
+    [
+      face.u.one,
+      face.m.pri,
+      face.u.two,
+      face.m.two,
+    ],
   ],
   name: 'Z Perm',
 };

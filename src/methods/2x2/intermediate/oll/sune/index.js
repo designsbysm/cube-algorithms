@@ -1,19 +1,20 @@
 import SVG from './image.svg';
+import { face } from '~/notations';
 
 export default {
   SVG,
   algorithm: [
-    '(',
-    'R',
-    'U',
-    'R\'',
-    'U',
-    ')',
-    '(',
-    'R',
-    'U2',
-    'R\'',
-    ')',
+    [
+      face.r.one,
+      face.u.one,
+      face.r.pri,
+      face.u.one,
+    ],
+    [
+      face.r.one,
+      face.u.two,
+      face.r.pri,
+    ],
   ],
   name: 'Sune',
 };
