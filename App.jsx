@@ -4,12 +4,12 @@ import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, StyleSheet } from 'react-native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
-import FourLLL from './src/methods/3x3/4LLL';
-import Intermediate from './src/methods/2x2/Intermediate';
+import FourLLL from './src/methods/3x3/4lll';
+import Intermediate from './src/methods/2x2/intermediate';
 import Method from './src/screens/Method';
-import Notations from './src/methods/3x3/Notations';
-import Ortega from './src/methods/2x2/Ortega';
-import Roux from './src/methods/3x3/Roux';
+import Notations from './src/methods/3x3/notations';
+import Ortega from './src/methods/2x2/ortega';
+import Roux from './src/methods/3x3/roux';
 
 const App = () => {
   const styles = createStyles();
@@ -18,7 +18,7 @@ const App = () => {
     <SafeAreaView style={styles.container}>
       <StatusBar style='auto' />
       <NavigationContainer>
-        <Drawer.Navigator initialRouteName='notations'>
+        <Drawer.Navigator initialRouteName='roux'>
           <Drawer.Screen
             component={Method}
             initialParams={{ method: Intermediate }}

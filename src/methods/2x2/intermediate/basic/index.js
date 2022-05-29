@@ -1,7 +1,7 @@
-import Last from './Last';
+import last from './last';
 
 export default {
-  cases: [Last],
+  cases: [last],
   name: 'Basic',
   // notes: 'Notes',
 };
