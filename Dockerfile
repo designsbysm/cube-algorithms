@@ -1,14 +1,17 @@
-FROM node:16.15.0-alpine
+FROM node:26-alpine
 
-RUN npm install -g serve
+ENV COREPACK_ENABLE_DOWNLOAD_PROMPT=0
+
+RUN npm install -g http-server
 RUN npm install -g expo-cli
+RUN npm install -g corepack && corepack enable
 
 WORKDIR /app
 
 COPY package.json .
-RUN npm install --legacy-peer-deps
+RUN yarn install
 
 COPY . .
-RUN npm run build:web
+RUN yarn build:web
 
-CMD serve --single web-build 
+CMD http-server web-build
