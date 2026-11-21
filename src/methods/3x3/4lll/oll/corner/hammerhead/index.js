@@ -14,8 +14,8 @@ export default {
       side.r.pri,
       face.f.one,
       face.r.one,
-      face.f.pri,
     ],
+    face.f.pri,
   ],
   name: 'Hammerhead',
 };
